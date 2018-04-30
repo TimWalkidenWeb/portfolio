@@ -1,0 +1,157 @@
+body {
+  margin: 0%; }
+  @media only screen and (max-width: 767px) {
+    body {
+      background-color: red; } }
+
+.game_container {
+  padding-bottom: 2%;
+  background-size: contain;
+  background-position: center;
+  /*background-color: white*/
+  background-image: url(disco.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 500px; }
+  @media only screen and (max-width: 767px) {
+    .game_container {
+      height: 244px; } }
+  .game_container .heading {
+    background-color: white;
+    color: black;
+    padding-top: 1%;
+    padding-right: 1%;
+    margin-right: 1%;
+    margin-left: 1%; }
+    .game_container .heading h3 {
+      font-weight: 700;
+      font-size: 1.43rem;
+      color: #2a3a4f;
+      text-align: right;
+      margin-bottom: 0%; }
+    @media only screen and (min-width: 768px) {
+      .game_container .heading .hide {
+        display: none; } }
+    @media only screen and (max-width: 767px) {
+      .game_container .heading .hide_small {
+        display: none; } }
+  .game_container h4 {
+    font-weight: 700;
+    font-size: 1.714rem;
+    color: #2cffbd;
+    text-align: right;
+    margin-right: 1%;
+    margin-bottom: 0%; }
+  @media only screen and (min-width: 768px) {
+    .game_container .game {
+      left: 10px;
+      position: absolute;
+      width: 15%; }
+      .game_container .game .wheel {
+        position: relative;
+        /* Place the game including the moose in relative position within the game*/
+        width: 100%;
+        /* Creates the width of the wheel as 50%*/ }
+      .game_container .game #myAnimation {
+        left: 42%;
+        /*Moves the moose to 44% to the left, causing it to be centered*/
+        top: 35%;
+        /*Moves the moose to 23% from the top, causing it to be centered*/
+        position: absolute;
+        /* allows the moose to be on top of the wheel*/
+        width: 26%;
+        /* sets to width of the div, not the image */ }
+        .game_container .game #myAnimation .moose {
+          width: 100%;
+          /*This sets the image to 100% of the div it is contained in*/ }
+    .game_container .spin_button {
+      background-color: #2cffbd;
+      border-color: #2cffbd;
+      font-size: 20px;
+      margin-top: 350px;
+      margin-left: 50px; } }
+  @media only screen and (max-width: 767px) {
+    .game_container .game {
+      left: 10px;
+      top: 200px;
+      position: absolute;
+      width: 20%; }
+      .game_container .game .wheel {
+        position: relative;
+        /* Place the game including the moose in relative position within the game*/
+        width: 100%;
+        /* Creates the width of the wheel as 50%*/ }
+      .game_container .game #myAnimation {
+        left: 42%;
+        /*Moves the moose to 44% to the left, causing it to be centered*/
+        top: 35%;
+        /*Moves the moose to 23% from the top, causing it to be centered*/
+        position: absolute;
+        /* allows the moose to be on top of the wheel*/
+        width: 26%;
+        /* sets to width of the div, not the image */ }
+        .game_container .game #myAnimation .moose {
+          width: 100%;
+          /*This sets the image to 100% of the div it is contained in*/ } }
+  .game_container .text {
+    text-align: center;
+    width: 100%;
+    margin-top: 5%; }
+    .game_container .text h1 {
+      color: #2cffbd;
+      font-size: 2.5em;
+      line-height: 1.5em;
+      font-weight: 900; }
+    .game_container .text h5 {
+      font-size: 1.25em;
+      font-weight: 900;
+      color: #2cffbd; }
+    .game_container .text button {
+      padding: 2%;
+      text-align: center;
+      background-color: #2cffbd;
+      color: #2a3a4f;
+      font-size: 18px;
+      border-color: #2cffbd;
+      weight: 700; }
+  .game_container .ContactInfo {
+    display: none; }
+    .game_container .ContactInfo .contactForm {
+      float: left;
+      padding: 5%; }
+      .game_container .ContactInfo .contactForm .formTitle {
+        text-align: center;
+        /*place text in the center*/
+        color: white;
+        /*changes font colour */
+        font-size: 18px;
+        /*sets font size*/
+        margin-bottom: 2%;
+        /*creates a gap under the heading*/ }
+      .game_container .ContactInfo .contactForm .input {
+        margin-top: 5%;
+        text-align: center;
+        /* place all input fields in the center*/ }
+        .game_container .ContactInfo .contactForm .input .formImput {
+          border-style: solid;
+          /* creates the same board style as on cleaversteam website*/
+          border-color: #B6C8C8;
+          /*sets border colour to same as cleaversteam website*/
+          border-radius: 2px;
+          /*sets border radius to same as cleaversteam website*/
+          padding: 2%;
+          /*adds same amount of space around the text*/
+          font-size: 15px;
+          /*sets size of the text which is placed in the input field*/ }
+      .game_container .ContactInfo .contactForm .input {
+        margin-top: 5%;
+        text-align: center;
+        /* place all input fields in the center*/ }
+        .game_container .ContactInfo .contactForm .input button {
+          padding: 2%;
+          text-align: center;
+          background-color: #2cffbd;
+          color: #2a3a4f;
+          font-size: 18px;
+          border-color: #2cffbd;
+          weight: 700; }

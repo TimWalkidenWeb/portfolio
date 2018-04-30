@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+			<!-- The following two links are being used to pull through javascript to play spin the moose,
+						a<meta name="viewport" content="width=device-width, initial-scale=1.0">nd the stylesheet to create the layout of the game.
+		 -->
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		   <script src="javascripts.js"></script>
+			 <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+
+	<body>
+
+		<div class="game_container">
+		<div class="heading">
+			<!-- Heading to show the name of the game at the top of the page  -->
+			 <h3 class="hide_small">DESTINATION WORK ABROAD TOURS BLOG LOGIN GB</h3>
+			 <h3 class="hide"> &#9776;</h3>
+			 <!--Heading to explain what the user can win-->
+			 <!-- <h3 id="prize">You have a 1 in 8th chance to win a all expenses paid trip</h3> -->
+		 </div>
+		<h4> Call Now 0151 702 6808</h4>
+			<!--<Div class="game"> acts as a container for both the wheel and the moose,
+		this helps when creating the css to place the moose ontop of the wheel-->
+			<div class="game" id="game">
+				<!--The follwing line pulls in the image of the wheel-->
+			 	<img class="wheel" src="wheel.PNG" alt="Wheel">
+
+				<!--The follwing div is used to pull in the myAnimation from the javascript, the animation which will be
+				connected to it is the rotate and duration. The reason the animation is used in the div because it make sure the whole
+				image spins not just spin around on one part of the image-->
+			  <div id ="myAnimation">
+					<!-- following line pulls in the image -->
+			 		<img class= "moose" src="moose_final.png" alt="moose">
+		 		</div>
+
+			</div>
+
+			<button class="spin_button"id="button" onclick="myMove()">Spin the moose</button>
+
+			<!-- <div class="text">
+
+				<h1>SUMMER CAMP CANADA</h1>
+				<h5> Watch Video			View image</h5>
+				<h1 id="prize">Spin the moose to win a prize</h1>
+				<!-- button which is used to pull spinMoose from javascript file-->
+				<!-- <button id="button" onclick="myMove()">Spin the moose</button> -->
+
+			<!-- </div> -->
+
+			<div class="ContactInfo" id="ContactInfo">
+				<!-- ContactForm is being used to create the position and the display of the contact form -->
+							<div class = "contactForm">
+								<!-- following div is the title of the form to tell them what to do  -->
+										 <div class ="formTitle">Enter Email to see what you have won</div>
+							<!--follwing input is used for the user to place a email as their contact detail -->
+							<div class="input" >
+											<input type="text" class="formImput" placeholder="Email">
+						 </div>
+						 <!--follwing input button is used to call the final function within the javascript which
+							is used to run the script to find out the prize they have won-->
+						<div class="input" >
+							<button class="button" onclick="prize()">Submit and find out prize</button>
+						</div>
+					</div>
+
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

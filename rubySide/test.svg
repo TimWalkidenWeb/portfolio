@@ -1,0 +1,10 @@
+<svg class="" height="210" width="500">
+<polygon points="0 100, 90 100, 50 15 " style="fill:#044B94;stroke:silver;strokewidth:1; fill-opacity:0.0 " />
+<polygon points="90 100 , 50 15, 140 15 " style="fill:#044B94;stroke:silver;strokewidth:1; fill-opacity:0.0 " />
+<polygon points="90 100 , 140 15, 180 100 " style="fill:#044B94;stroke:silver;strokewidth:1; fill-opacity:0.0 " />
+<polygon points="180 100 , 140 15, 220 15 " style="fill:#044B94;stroke:silver;strokewidth:1; fill-opacity:0.0 " />
+<polygon points="180 100 , 220 15, 270 100 " style="fill:#044B94;stroke:silver;strokewidth:1; fill-opacity:0.0 " />
+<polygon points="0 100 , 90 100, 140 210 " style="fill:#044B94;stroke:silver;strokewidth:1; fill-opacity:0.0 " />
+<polygon points="90 100 , 180 100, 140 210 " style="fill:#044B94;stroke:silver;strokewidth:1; fill-opacity:0.0 " />
+<polygon points="180 100 , 270 100, 140 210 " style="fill:#044B94;stroke:silver;strokewidth:1; fill-opacity:0.0 " />
+</svg> 

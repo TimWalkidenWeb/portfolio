@@ -1,0 +1,400 @@
+body {
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: #ebebed;
+  margin: 0 auto;
+  width: 100%;
+  color: #FFFFFF; }
+
+.row {
+  content: "";
+  clear: both;
+  display: block; }
+  .row .imagearea {
+    float: left;
+    background-color: #1a1a27;
+    height: 75%; }
+    @media only screen and (min-width: 768px) {
+      .row .imagearea {
+        width: 50%; } }
+    @media only screen and (max-width: 767px) {
+      .row .imagearea {
+        width: 100%; } }
+    .row .imagearea .ruby_side {
+      content: "";
+      clear: both;
+      display: block;
+      margin-top: calc(25% - 32.5px);
+      text-align: center; }
+      .row .imagearea .ruby_side .logo {
+        float: left;
+        height: 25%;
+        width: 50%;
+        text-align: center; }
+        @media only screen and (min-width: 768px) {
+          .row .imagearea .ruby_side .logo {
+            width: 100%; } }
+        @media only screen and (max-width: 767px) {
+          .row .imagearea .ruby_side .logo {
+            width: 100%; } }
+    .row .imagearea .row {
+      content: "";
+      clear: both;
+      display: block;
+      text-align: center; }
+      .row .imagearea .row a h2 {
+        color: #FFFFFF;
+        font-size: 23px;
+        width: 50%;
+        float: left; }
+      .row .imagearea .row a h2 {
+        color: #FFFFFF;
+        font-size: 23px;
+        width: 50%;
+        float: left; }
+    .row .imagearea .ruby {
+      float: left; }
+      @media only screen and (min-width: 768px) {
+        .row .imagearea .ruby {
+          top: calc(75% - 100px);
+          position: absolute;
+          left: calc(50% - 141px); } }
+      @media only screen and (max-width: 767px) {
+        .row .imagearea .ruby {
+          display: none; } }
+  .row .textarea {
+    background-color: #D3D3D3;
+    height: 75%;
+    float: right; }
+    @media only screen and (min-width: 768px) {
+      .row .textarea {
+        width: 50%; } }
+    @media only screen and (max-width: 767px) {
+      .row .textarea {
+        width: 100%; } }
+    .row .textarea .textarea_head {
+      content: "";
+      clear: both;
+      display: block;
+      margin-top: 9%;
+      margin-bottom: 5%; }
+      .row .textarea .textarea_head h1 {
+        font-family: sans-serif;
+        font-weight: lighter;
+        margin: 0%;
+        color: #353A40;
+        width: 100%;
+        text-align: center; }
+    .row .textarea .row {
+      content: "";
+      clear: both;
+      display: block; }
+      .row .textarea .row .textarea_content {
+        margin-left: 8%;
+        text-align: -webkit-center;
+        font-family: sans-serif;
+        font-weight: initial;
+        float: left;
+        width: 83.33%; }
+        .row .textarea .row .textarea_content p {
+          color: #353A40;
+          font-size: 18px;
+          font-weight: 400; }
+
+.row {
+  content: "";
+  clear: both;
+  display: block; }
+  .row .image_next {
+    height: 100%;
+    float: left; }
+    @media only screen and (min-width: 768px) {
+      .row .image_next {
+        width: 50%; } }
+    @media only screen and (max-width: 767px) {
+      .row .image_next {
+        width: 100%; } }
+    @media only screen and (min-width: 768px) {
+      .row .image_next {
+        background-color: #D3D3D3; } }
+    @media only screen and (max-width: 767px) {
+      .row .image_next {
+        background-color: #1a1a27; } }
+    .row .image_next .title {
+      text-align: center;
+      content: "";
+      clear: both;
+      display: block; }
+      @media only screen and (min-width: 768px) {
+        .row .image_next .title {
+          margin-top: 25%;
+          color: #353A40; } }
+      @media only screen and (max-width: 767px) {
+        .row .image_next .title {
+          color: #FFFFFF;
+          margin-top: 25%; } }
+      .row .image_next .title h3 {
+        width: 100%;
+        font-size: 23px;
+        float: left; }
+    .row .image_next .row {
+      content: "";
+      clear: both;
+      display: block; }
+      .row .image_next .row .cleversteam_logo {
+        width: 100%;
+        text-align: center; }
+      @media only screen and (min-width: 768px) {
+        .row .image_next .row .media {
+          display: none; } }
+      @media only screen and (max-width: 767px) {
+        .row .image_next .row .desktop {
+          display: none; } }
+    .row .image_next .row {
+      content: "";
+      clear: both;
+      display: block;
+      text-align: center; }
+      .row .image_next .row a h2 {
+        font-size: 23px;
+        width: 50%;
+        float: left; }
+        @media only screen and (min-width: 768px) {
+          .row .image_next .row a h2 {
+            color: #353A40; } }
+        @media only screen and (max-width: 767px) {
+          .row .image_next .row a h2 {
+            color: #FFFFFF; } }
+    .row .image_next .ruby_2 {
+      content: "";
+      clear: both;
+      display: block; }
+      @media only screen and (min-width: 768px) {
+        .row .image_next .ruby_2 {
+          position: absolute;
+          left: calc(50% - 141px);
+          top: calc(175% - 100px); } }
+      @media only screen and (max-width: 767px) {
+        .row .image_next .ruby_2 {
+          display: none; } }
+  .row .textarea_2 {
+    height: 100%;
+    float: right; }
+    @media only screen and (min-width: 768px) {
+      .row .textarea_2 {
+        width: 50%; } }
+    @media only screen and (max-width: 767px) {
+      .row .textarea_2 {
+        width: 100%; } }
+    @media only screen and (min-width: 768px) {
+      .row .textarea_2 {
+        background-color: #1a1a27;
+        color: #FFFFFF; } }
+    @media only screen and (max-width: 767px) {
+      .row .textarea_2 {
+        background-color: #D3D3D3;
+        color: #353A40; } }
+    .row .textarea_2 .Organisers_layout .textarea_head {
+      content: "";
+      clear: both;
+      display: block; }
+      .row .textarea_2 .Organisers_layout .textarea_head h1 {
+        width: 100%;
+        text-align: center; }
+    .row .textarea_2 .Organisers_layout .daniel {
+      width: 100%;
+      content: "";
+      clear: both;
+      display: block;
+      margin-top: 1%;
+      font-size: 16px;
+      align-content: center;
+      text-align: center; }
+      .row .textarea_2 .Organisers_layout .daniel .heads {
+        height: 20%;
+        border-radius: 50%; }
+      .row .textarea_2 .Organisers_layout .daniel a p {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400; }
+        @media only screen and (min-width: 768px) {
+          .row .textarea_2 .Organisers_layout .daniel a p {
+            color: #FFFFFF; } }
+        @media only screen and (max-width: 767px) {
+          .row .textarea_2 .Organisers_layout .daniel a p {
+            color: #353A40; } }
+    .row .textarea_2 .Organisers_layout .row {
+      content: "";
+      clear: both;
+      display: block; }
+      .row .textarea_2 .Organisers_layout .row .mike {
+        margin-top: 1%;
+        top: 55%;
+        font-size: 16px;
+        text-align: center;
+        float: left; }
+        @media only screen and (min-width: 768px) {
+          .row .textarea_2 .Organisers_layout .row .mike {
+            width: 50%; } }
+        @media only screen and (max-width: 767px) {
+          .row .textarea_2 .Organisers_layout .row .mike {
+            width: 50%; } }
+        .row .textarea_2 .Organisers_layout .row .mike .heads {
+          height: 20%;
+          border-radius: 50%; }
+        .row .textarea_2 .Organisers_layout .row .mike a p {
+          text-align: center;
+          font-size: 16px;
+          font-weight: 400; }
+          @media only screen and (min-width: 768px) {
+            .row .textarea_2 .Organisers_layout .row .mike a p {
+              color: #FFFFFF; } }
+          @media only screen and (max-width: 767px) {
+            .row .textarea_2 .Organisers_layout .row .mike a p {
+              color: #353A40; } }
+      .row .textarea_2 .Organisers_layout .row .tom {
+        margin-top: 1%;
+        top: 55%;
+        font-size: 16px;
+        align-content: center;
+        text-align: center;
+        float: left; }
+        @media only screen and (min-width: 768px) {
+          .row .textarea_2 .Organisers_layout .row .tom {
+            width: 41.66%; } }
+        @media only screen and (max-width: 767px) {
+          .row .textarea_2 .Organisers_layout .row .tom {
+            width: 50%; } }
+        .row .textarea_2 .Organisers_layout .row .tom .heads {
+          height: 20%;
+          border-radius: 50%; }
+        .row .textarea_2 .Organisers_layout .row .tom a p {
+          text-align: center;
+          font-size: 16px;
+          font-weight: 400; }
+          @media only screen and (min-width: 768px) {
+            .row .textarea_2 .Organisers_layout .row .tom a p {
+              color: #FFFFFF; } }
+          @media only screen and (max-width: 767px) {
+            .row .textarea_2 .Organisers_layout .row .tom a p {
+              color: #353A40; } }
+
+.row {
+  content: "";
+  clear: both;
+  display: block; }
+  .row .imagearea {
+    background-color: #1a1a27;
+    height: 75%; }
+    @media only screen and (min-width: 768px) {
+      .row .imagearea {
+        width: 50%; } }
+    @media only screen and (max-width: 767px) {
+      .row .imagearea {
+        width: 100%; } }
+    .row .imagearea .row {
+      content: "";
+      clear: both;
+      display: block; }
+      .row .imagearea .row .Organisers_image {
+        content: "";
+        clear: both;
+        display: block;
+        margin-top: 25%;
+        text-align: center; }
+        .row .imagearea .row .Organisers_image h2 {
+          width: 100%;
+          color: #FFFFFF;
+          font-size: 23px; }
+    .row .imagearea .calendar {
+      content: "";
+      clear: both;
+      display: block; }
+      @media only screen and (min-width: 768px) {
+        .row .imagearea .calendar {
+          position: relative;
+          left: calc(50% - 150px); } }
+      @media only screen and (min-width: 768px) {
+        .row .imagearea .calendar {
+          position: relative;
+          left: calc(25% - 210px); } }
+    .row .imagearea .row {
+      content: "";
+      clear: both;
+      display: block;
+      text-align: center; }
+      .row .imagearea .row a h2 {
+        color: #FFFFFF;
+        font-size: 23px;
+        width: 50%;
+        float: left; }
+      .row .imagearea .row a h2 {
+        color: #FFFFFF;
+        font-size: 23px;
+        width: 50%;
+        float: left; }
+  .row .textarea {
+    background-color: #D3D3D3;
+    height: 75%;
+    float: right; }
+    @media only screen and (min-width: 768px) {
+      .row .textarea {
+        width: 50%; } }
+    @media only screen and (max-width: 767px) {
+      .row .textarea {
+        width: 100%; } }
+    .row .textarea .event_content .textarea_head {
+      content: "";
+      clear: both;
+      display: block;
+      margin-top: 9%;
+      margin-bottom: 5%; }
+      .row .textarea .event_content .textarea_head h1 {
+        width: 100%;
+        text-align: center; }
+    .row .textarea .time {
+      content: "";
+      clear: both;
+      display: block;
+      text-align: center; }
+      .row .textarea .time .date {
+        width: 50%;
+        float: left; }
+        .row .textarea .time .date .p_light {
+          color: #353A40;
+          font-size: 18px;
+          font-weight: 400; }
+      .row .textarea .time .location {
+        width: 50%;
+        float: left; }
+        .row .textarea .time .location .p_light {
+          color: #353A40;
+          font-size: 18px;
+          font-weight: 400; }
+    .row .textarea .row {
+      content: "";
+      clear: both;
+      display: block; }
+      .row .textarea .row .textarea_content {
+        width: 83.33%; }
+        .row .textarea .row .textarea_content .p_light {
+          color: #353A40;
+          font-size: 18px;
+          font-weight: 400; }
+
+.footer {
+  background-color: black;
+  color: #FFFFFF;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  content: "";
+  clear: both;
+  display: block;
+  float: left; }
+  .footer .LinkedIn {
+    width: 50%;
+    float: left; }
+  .footer .twitter {
+    width: 50%;
+    float: left; }

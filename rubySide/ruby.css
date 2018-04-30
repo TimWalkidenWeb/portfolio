@@ -1,0 +1,325 @@
+body{
+font-family: sans-serif;
+font-weight: bold;
+background-color: #ebebed;
+margin: 0 auto;
+width: 100%;
+color: color: white;
+}
+
+/* For mobile phones: */
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+     float: left;
+}
+@media only screen and (max-width: 767px) {
+    /* For mobile: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+    .ruby_2{
+    /*top: calc(100% - 100px);*/
+    position: absolute;
+    left: calc(50% - 141px);
+    top: calc(350% - 100px);
+    }
+
+    .calendar{
+      position: relative;
+      left: calc(50% - 150px);
+    }
+
+
+    .ruby{
+      top: calc(150% - 100px);
+    position: absolute;
+    left: calc(50% - 141px);
+
+    }
+
+    .bottom_nav{
+      position: fixed;
+     /*top: calc(50% + 133px - 110.5px);*/
+
+            left: calc(50% - 69.5px);
+      }
+
+    h1{
+      font-size: 20px;
+    }
+
+}
+@media only screen and (min-width: 768px) {
+
+  h1{
+    font-size: 30px;
+  }
+  .bottom_nav{
+    position: fixed;
+   /*top: calc(50% + 133px - 110.5px);*/
+    left: calc(50% - 69.5px);
+    }
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .ruby_2{
+    /*top: calc(100% - 100px);*/
+    position: absolute;
+    left: calc(50% - 141px);
+    top: calc(175% - 100px);
+    }
+
+    .ruby{
+      top: calc(75% - 100px);
+    position: absolute;
+    left: calc(50% - 141px);
+
+    }
+    .calendar{
+      position: relative;
+      left: calc(15% - 150px);
+          text-align: center;
+
+
+}
+
+
+.navigation{
+  position: absolute;
+  top: calc(50% - 73.5px);
+  left: calc(25% - 180px);
+}
+
+
+
+.nav{
+  border-bottom-style: dashed;
+  border-bottom-color: #d1142f;
+  background-color: lightgrey;
+  padding-bottom: 4%;
+  padding-top: 4%;
+}
+
+.about{
+  transform: rotate(90deg);
+    text-align: center;
+    margin-top: 3%;
+}
+
+.event{padding
+      transform: rotate(270deg);
+    text-align: center;
+    padding-top: 5%;
+
+}
+
+.logo{
+  height: 25%;
+  width: 50%;
+  margin-left: calc(25%);
+
+}
+
+
+
+h1{
+font-family: sans-serif;
+  font-weight: lighter;
+  color: white;
+  margin: 0%;
+}
+
+.align{
+  text-align: center;
+}
+
+p{
+
+  font-size: 20px;
+  font-weight: 400;
+}
+.p_dark{
+  color: white;
+}
+.p_light{
+color:  #353A40;
+}
+.hide{
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#event_content{
+
+}
+
+#Organisers{
+
+}
+
+
+
+
+
+/*New design*/
+
+.imagearea{
+
+  background-color: #1a1a27;
+  height: 75%;
+}
+
+.image_next{
+  height: 100%;
+  background-color: #D3D3D3;
+
+}
+
+.textarea{
+  background-color: #D3D3D3;
+  height: 75%;
+  float: right;
+}
+.textarea_2{
+  background-color: #1a1a27;
+  height: 100%;
+  float: right;
+}
+.align{
+  text-align: center;
+}
+
+.textarea_content{
+    margin-left: 8%;
+    text-align: -webkit-center;
+    font-family: sans-serif;
+    font-weight: initial;
+}
+
+.textarea_head{
+    margin-top: 9%;
+    margin-bottom: 5%;
+}
+
+.time{
+  margin-right: 1%;
+}
+
+.Organisers_layout{
+  margin-top: calc(40% - 200px);
+}
+
+.nav_active{
+
+margin: 0%;
+padding-left: 0%;
+}
+.cleversteam{
+  /*position: fixed;*/
+  top: calc(90% - 73.5px);
+  /* left: 7%; */
+
+}
+
+.cleversteam_logo{
+
+  /*height: 20%;*/
+/*position: absolute;*/
+/*left: calc(25% - 106px);*/
+/*top: calc(90% - 27px);*/
+}
+
+h2{
+  color: white;
+/*position: absolute;*/
+font-size: 23px;
+/*left: calc(25% - 122px);
+top: calc(90% - 73.5px);*/
+}
+
+.daniel{
+  /*position: fixed;
+left: calc(75% - 70px);*/
+margin-top: 1%;
+font-size: 95%;
+align-content:center;
+text-align: center;
+color: white;
+}
+
+
+
+
+.mike{
+  /*position: fi.xed;
+left: calc(62% - 100px);*/
+margin-top: 1%;
+top: 55%;
+font-size: 95%;
+align-content: center;
+text-align: center;
+color:white;
+}
+.tom{
+  /*position: fixed;
+left: calc(87% - 100px);*/
+margin-top: 1%;
+top: 55%;
+font-size: 95%;
+align-content: center;
+text-align: center;
+color: white;
+}
+.heads{
+  height: 20%;
+  border-radius: 50%;
+}
+
+
+.social{
+  text-align: center;
+top: 90%;
+position: sticky;
+color: #d1142f ;
+}
+
+.Organisers_image{
+  margin-top: calc(50% - 270px);
+text-align: center;
+}
+
+.ruby_side{
+  margin-top: calc(25% - 32.5px);
+text-align: center;
+}
+
+.about_link{
+  /*margin-top: calc(95% - 32.5px);*/
+text-align: center;
+}

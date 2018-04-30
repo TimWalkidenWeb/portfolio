@@ -1,0 +1,183 @@
+$text-color: rgb(44,255,189);
+$text-color-two: rgb(42,58,79);
+
+
+
+@mixin button {
+  padding:2%;
+  text-align: center;
+  background-color: $text-color;
+  color: rgb(42, 58, 79);
+  font-size: 18px;
+  border-color: $text-color;
+  weight: 700;
+}
+
+body{
+  margin: 0%;
+  @media only screen and (max-width: 767px) {
+    background-color: red;
+  }
+}
+
+.game_container{
+
+  padding-bottom: 2%;
+  background-size:contain;
+  background-position:center;
+  /*background-color: white*/
+  background-image: url(disco.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  @media only screen and (max-width: 767px) {
+    height: 244px;
+  }
+  height: 500px ;
+    .heading{
+      background-color: white;
+    color: black;
+    padding-top: 1%;
+    padding-right: 1%;
+    margin-right: 1%;
+    margin-left: 1%;
+    h3{
+      font-weight: 700;
+      font-size: 1.43rem;
+      color:$text-color-two;
+      text-align: right;
+      margin-bottom: 0%;
+    }
+    @media only screen and (min-width: 768px) {
+
+      .hide{
+        display:none;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      .hide_small{
+      display:none;
+      }
+    }
+    }
+    h4{
+      font-weight: 700;
+      font-size: 1.714rem;
+      color: $text-color;
+      text-align: right;
+      margin-right: 1%;
+      margin-bottom: 0%
+
+    }
+
+   @media only screen and (min-width: 768px) {
+   .game{
+    left: 10px;
+    position: absolute;
+    width: 15%;
+       .wheel{
+       position: relative; /* Place the game including the moose in relative position within the game*/
+      width: 100%; /* Creates the width of the wheel as 50%*/
+   }
+
+
+    #myAnimation{
+      left: 42%; /*Moves the moose to 44% to the left, causing it to be centered*/
+      top: 35%; /*Moves the moose to 23% from the top, causing it to be centered*/
+      position: absolute; /* allows the moose to be on top of the wheel*/
+      width: 26%; /* sets to width of the div, not the image */
+      .moose{
+        width: 100%; /*This sets the image to 100% of the div it is contained in*/
+            }
+    }
+   }
+   .spin_button{
+     background-color: #2cffbd;
+     border-color: #2cffbd;
+     font-size: 20px;
+     margin-top: 350px;
+     margin-left: 50px;
+   }
+}
+@media only screen and (max-width: 767px) {
+   .game{
+    left: 10px;
+    top: 200px;
+    position: absolute;
+    width: 20%;
+  .wheel{
+  position: relative; /* Place the game including the moose in relative position within the game*/
+    width: 100%; /* Creates the width of the wheel as 50%*/
+ }
+#myAnimation{
+ left: 42%; /*Moves the moose to 44% to the left, causing it to be centered*/
+ top: 35%; /*Moves the moose to 23% from the top, causing it to be centered*/
+ position: absolute; /* allows the moose to be on top of the wheel*/
+ width: 26%; /* sets to width of the div, not the image */
+ .moose{
+   width: 100%; /*This sets the image to 100% of the div it is contained in*/
+       }
+}
+
+  }
+}
+  .text{
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+    h1{
+      color: $text-color;
+       font-size: 2.5em;
+       line-height: 1.5em;
+       font-weight: 900;
+
+    }
+    h5{
+      font-size: 1.25em;
+        font-weight: 900;
+       color: $text-color
+
+    }
+    button{
+      @include button;
+
+    }
+  }
+
+  .ContactInfo{
+    display:none;
+    .contactForm{
+      float: left;
+      padding: 5% /* adds pading around all sides of the text*/;
+
+      .formTitle{
+        text-align: center; /*place text in the center*/
+        color: white; /*changes font colour */
+        font-size:18px; /*sets font size*/
+        margin-bottom:2%; /*creates a gap under the heading*/
+
+      }
+      .input{
+        margin-top: 5%;
+        text-align: center; /* place all input fields in the center*/
+        .formImput{
+
+          border-style:solid; /* creates the same board style as on cleaversteam website*/
+          border-color:#B6C8C8; /*sets border colour to same as cleaversteam website*/
+          border-radius:2px; /*sets border radius to same as cleaversteam website*/
+          padding:2%; /*adds same amount of space around the text*/
+          font-size: 15px; /*sets size of the text which is placed in the input field*/
+                }
+      }
+      .input{
+        margin-top: 5%;
+        text-align: center; /* place all input fields in the center*/
+        button{
+            @include button;
+
+        }
+      }
+
+    }
+  }
+
+}
