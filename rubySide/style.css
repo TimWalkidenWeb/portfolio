@@ -319,7 +319,7 @@ body {
       @media only screen and (min-width: 768px) {
         .row .imagearea .calendar {
           position: relative;
-          left: calc(25% - 210px); } }
+           font-size: 13em } }
     .row .imagearea .row {
       content: "";
       clear: both;
