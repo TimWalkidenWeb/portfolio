@@ -38,7 +38,7 @@ body {
   .game_container h4 {
     font-weight: 700;
     font-size: 1.714rem;
-    color: #2cffbd;
+    color: white;
     text-align: right;
     margin-right: 1%;
     margin-bottom: 0%; }
@@ -52,6 +52,11 @@ body {
         /* Place the game including the moose in relative position within the game*/
         width: 100%;
         /* Creates the width of the wheel as 50%*/ }
+	 .game_container .game .prize {
+		 text-align: center; /*place text in the center*/
+		color: white; /*changes font colour */
+        font-size:20px; /*sets font size*/
+		}		 
       .game_container .game #myAnimation {
         left: 42%;
         /*Moves the moose to 44% to the left, causing it to be centered*/
@@ -81,6 +86,11 @@ body {
         /* Place the game including the moose in relative position within the game*/
         width: 100%;
         /* Creates the width of the wheel as 50%*/ }
+		.game_container .game .prize {
+		 text-align: center; /*place text in the center*/
+		color: white; /*changes font colour */
+        font-size:20px; /*sets font size*/
+		}	
       .game_container .game #myAnimation {
         left: 42%;
         /*Moves the moose to 44% to the left, causing it to be centered*/

@@ -1,32 +1,43 @@
 
+/*Font and Backgound colours to be pulled in throughout the styling*/
+
+/*Light font colour*/
 $light-text-color:#353A40;
+/*Dark font color*/
 $dark-text-color:#FFFFFF;
+/*light font color*/
 $light-background-color: #D3D3D3;
+/*dark background color*/
 $dark-background-color:#1a1a27;
 
+/* mixin to be called when producing a row */
 @mixin row {
   content: "";
   clear: both;
   display: block;
 }
+/*mixin to be called when creating light text*/
 @mixin light_text {
   color:  $light-text-color;
   font-size: 18px;
   font-weight: 400
 }
 
-
+/*heights of eacbh of columns for  mobile and desktop using media queries*/
 @mixin mobile_desktop_heights {
+	/* width of coloumn when desktop*/
   @media only screen and (min-width: 768px) {
     width:50%;
   }
+  /*width of coloumn when mobile*/
   @media only screen and (max-width: 767px) {
   width:100%;
   }
 }
 
+/*Styling for body which sets it for the whole website*/*/
 body{
-  font-family: sans-serif;
+  font-family: sans-serif; 
   font-weight: bold;
   background-color: #ebebed;
   margin: 0 auto;
@@ -34,21 +45,32 @@ body{
   color: $dark-text-color;
 
 }
-.row{
-  @include row;
-  .imagearea{
-    @include mobile_desktop_heights;
-    float: left;
-    background-color: $dark-background-color;
-    height: 75%;
 
+/*First row to show about*/
+.row{
+	/*calls in rows*/
+  @include row;
+  /*image area for about*/
+  .imagearea{
+	/*calls in the heights for the columns*/
+    @include mobile_desktop_heights;
+	/*place the image column before the text area*/
+    float: left;
+	/*set background by calling in the colour*/
+    background-color: $dark-background-color;
+	/*set heigh of column*/
+    height: 75%;
+	
+	/*Content for first row*/	
     .ruby_side{
-      @include row;
-      margin-top: calc(25% - 32.5px);
-      text-align: center;
-      .logo{
+		@include row;
+	    margin-top: calc(25% - 32.5px);
+		text-align: center;
+		/*Logo for rubyside*/
+	  .logo{
         @media only screen and (min-width: 768px) {
-          width:100%;
+         width: 50%; 
+			margin-left:25%;
         }
         @media only screen and (max-width: 767px) {
         width:100%;
@@ -59,9 +81,11 @@ body{
         text-align: center;
       }
     }
+	/*Second row in the column*/
   .row{
     @include row;
     text-align: center;
+	/*Styling for the links*/
     a{
       h2{
       color: $dark-text-color;
@@ -70,16 +94,9 @@ body{
       float: left;
       }
     }
-
-    a{
-      h2{
-      color: $dark-text-color;
-      font-size: 23px;
-      width: 50%;
-      float: left;
-      }
     }
   }
+  /*ruby svg styling*/
   .ruby{
     float: left;
     @media only screen and (min-width: 768px) {
@@ -88,20 +105,26 @@ body{
     left: calc(50% - 141px);
 
     }
+	/*hide ruby for mobile*/
     @media only screen and (max-width: 767px) {
       display: none;
     }
   }
+  /*end of first coloumn in this row*/
 }
+	/*second column in the first row*/	
   .textarea{
+  /*include heights for the coloumn*/
   @include mobile_desktop_heights;
     background-color: $light-background-color;
     height: 75%;
     float: right;
+	/*heading of text area*/
     .textarea_head{
       @include row;
       margin-top: 9%;
       margin-bottom: 5%;
+	  /*styling for text within header*/
       h1{
         font-family: sans-serif;
           font-weight: lighter;
@@ -113,8 +136,10 @@ body{
 
       }
     }
+	/*Second row in the text area*/
     .row{
       @include row;
+	  /*Description of rubyside styling*/
       .textarea_content{
         margin-left: 8%;
         text-align: -webkit-center;
@@ -122,6 +147,7 @@ body{
         font-weight: initial;
         float: left;
         width: 83.33%;
+		/*setting style for the writting*/
         p{
           @include light_text;
 
@@ -131,63 +157,88 @@ body{
   }
 }
 
+/*Second row to show the organisers*/
 .row{
+	/*get the row ready so follows the last row*/
   @include row ;
+  /*image side for organiser*/
   .image_next{
     height: 100%;
     float: left;
+	/*setting the size of coloumn*/
     @include mobile_desktop_heights;
+	/*Change the colour depending on device so it follows the colour order*/
     @media only screen and (min-width: 768px) {
+	/*Desktop*/
       background-color: $light-background-color;
     }
     @media only screen and (max-width: 767px) {
+		/*Mobile*/	
       background-color: $dark-background-color;
     }
+	/*styling for title of section for mobile and desktop*/
   .title{
+	/*desktop styling for the title*/
     @media only screen and (min-width: 768px) {
       margin-top: 25%;
       color:  $light-text-color;
     }
+	/*mobile styling for the title*/
     @media only screen and (max-width: 767px) {
       color:  $dark-text-color;
       margin-top:25%;
     }
     text-align: center;
+	/*new row */
     @include row;
+	/*h3 styling for text saying hosted by*/
     h3{
       width:100%;
       font-size: 23px;
       float: left;
     }
   }
+  /* new row for logo*/
   .row{
+  /*creating a new row*/
     @include row;
+	/*styling for logo*/
     .cleversteam_logo{
       width: 100%;
       text-align: center;
     }
+	/*display switch between different logo depending on background-color*/
+	/*desktop logo for cleaversteam*/
     @media only screen and (min-width: 768px) {
       .media{
         display: none;
       }
     }
+	/*mobile logo for cleversteam*/
     @media only screen and (max-width: 767px) {
       .desktop{
         display: none;
       }
     }
   }
+  /*Last row to allow links to other sections*/
   .row{
+  /*new row*/
     @include row;
     text-align: center;
+	/*styling for links*/
     a{
       h2{
+	  /*media query to change font depedning on the background-color*/
+	  /*Desktop display*/
         @media only screen and (min-width: 768px) {
             color:  $light-text-color;
         }
+		/*Mobile display*/
         @media only screen and (max-width: 767px) {
           color:  $dark-text-color;
         }
+		/*extra styling for links*/
       font-size: 23px;
       width: 50%;
       float: left;
@@ -196,55 +247,76 @@ body{
     }
 
 }
+	/*Second SVG ruby styling*/
   .ruby_2{
     @include row;
+	/*styling for desktop*/
     @media only screen and (min-width: 768px) {
       position: absolute;
       left: calc(50% - 141px);
       top: calc(175% - 100px);
     }
+	/*styling to hide for mobile*/
     @media only screen and (max-width: 767px) {
       display: none;
     }
   }
   }
+  /*second text area for the organiser content*/
   .textarea_2{
+	/* set height*/
     height: 100%;
+	/*float next to the coloum with the organsier logo*/
     float: right;
+	/*Add the heights of the column*/
     @include mobile_desktop_heights;
+	/*media query to change the background colour of section*/
+	/*Desktop styling*/
     @media only screen and (min-width: 768px) {
       background-color: $dark-background-color;
       color: $dark-text-color;
     }
+	/*Mobile styling*/
     @media only screen and (max-width: 767px) {
 
     background-color: $light-background-color;
     color:  $light-text-color;
     }
+	/*First row to include heading of section*/
     .Organisers_layout{
       .textarea_head{
-        @include row;
+        /*styling for row*/
+		@include row;
+		/*styling for text*/
         h1{
           width: 100%;
           text-align: center;
         }
       }
+	  /*Second row to show first organiser */
       .daniel{
+		/*row size and position within column*/
         width: 100%;
         @include row;
         margin-top: 1%;
         font-size: 16px;
         align-content:center;
         text-align: center;
+		/*Styling for organiser image*/
         .heads{
           height: 20%;
           border-radius: 50%;
         }
+		/*Styling for link to his linkedin profile*/
         a{
           p{
+		  /*styling for text in link*/
             text-align: center;
             font-size: 16px;
             font-weight: 400;
+			/*change font colour depening on device 
+				Dektop first and then mobile
+			*/
             @media only screen and (min-width: 768px) {
                 color:  $dark-text-color;
             }
@@ -254,9 +326,13 @@ body{
           }
         }
       }
+	  /*new row to include the last to organisers*/
       .row{
+		/*Create row*/
         @include row;
+		/*styling for mike*/
         .mike{
+		/*position of mike in the row*/
           margin-top: 1%;
           top: 55%;
           font-size: 16px;
@@ -268,17 +344,20 @@ body{
           @media only screen and (max-width: 767px) {
           width:50%;
           }
+		  /*Styling for image*/
           .heads{
             height: 20%;
             border-radius: 50%;
 
           }
-
+		/*styling for link to linkedin*/
           a{
             p{
+			/*text font styling*/
               text-align: center;
               font-size: 16px;
               font-weight: 400;
+			  /*Font colour depending on the device starting with desktop and then mobile*/
               @media only screen and (min-width: 768px) {
                   color:  $dark-text-color;
               }
@@ -288,7 +367,9 @@ body{
             }
           }
         }
+		/*display for tom in the row*/
         .tom{
+			/*styling for tom within the row*/
           margin-top: 1%;
           top: 55%;
           font-size: 16px;
@@ -296,22 +377,27 @@ body{
           text-align: center;
 
             float: left;
+			/*width of the picture depedning on the device starting with desktop and then mobile*/
           @media only screen and (min-width: 768px) {
             width:41.66%;
           }
           @media only screen and (max-width: 767px) {
           width:50%;
           }
+		  /*Styling for the image of the head*/
           .heads{
             height: 20%;
             border-radius: 50%;
 
           }
+		  /*Styling for the link to linkedin*/*/
           a{
             p{
+			/*styling for text*/
               text-align: center;
               font-size: 16px;
               font-weight: 400;
+			  /*Change of text colour between the devices starting with desktop and mobile*/
               @media only screen and (min-width: 768px) {
                   color:  $dark-text-color;
               }
@@ -328,19 +414,25 @@ body{
 }
 
 .row{
+	/*Final row to show the events*/
   @include row;
+  /*image area for the events*/
   .imagearea{
     background-color: $dark-background-color;
     height: 75%;
+	/*Insert size of the column*/
     @include mobile_desktop_heights;
 
     .row{
+	/*Start a row */
       @include row ;
-
+	
+	/* create the display for the organsier but for events*/
     .Organisers_image{
       @include row;
       margin-top: 25%;
       text-align: center;
+	  /*heading events*/
       h2{
         width:100%;
         color: $dark-text-color;
@@ -349,11 +441,13 @@ body{
       }
     }
   }
+  /*Styling for the icon of the calendar*/  
   .calendar{
       @include row;
+	  /*Change the size depending on the device starting with desktop and then mobile*/
     @media only screen and (min-width: 768px) {
       position: relative;
-      left: calc(50% - 150px);
+      font-size: 16em;
     }
     @media only screen and (min-width: 768px) {
       position: relative;
@@ -361,12 +455,15 @@ body{
     }
 
   }
+  /*New row under the image to create the links*/
   .row{
+  /*styling to create row */
     @include row;
     text-align: center;
-
+	/*styling for the links*/
     a{
       h2{
+	  /*styling for text in the links*/
       color: $dark-text-color;
       font-size: 23px;
       width: 50%;
@@ -375,8 +472,10 @@ body{
       }
     }
 
+/*styling for the links*/
     a{
       h2{
+	  /*styling for text in the links*/
       color: $dark-text-color;
       font-size: 23px;
       width: 50%;
@@ -386,25 +485,33 @@ body{
     }
 }
 }
+/*text area for next event*/
 .textarea{
+		/*styling for the new column*/
   background-color: $light-background-color;
   height: 75%;
   float: right;
+  /*Height of the column*/
   @include mobile_desktop_heights;
+  /*Styling for the content starts*/
   .event_content{
+  /*Styling for the header*/
     .textarea_head{
       @include row;
       margin-top: 9%;
       margin-bottom: 5%;
+	  /*styling for the text*/
       h1{
         width:100%;
         text-align: center;
       }
     }
   }
+  /*New row  to include two column for data and location*/
   .time{
     @include row;
     text-align: center;
+	/*Column for date*/
     .date{
       width: 50%;
       float: left;
@@ -412,6 +519,7 @@ body{
         @include light_text;
       }
     }
+	/*column for location */
     .location{
       width: 50%;
       float: left;
@@ -420,10 +528,14 @@ body{
       }
     }
   }
+  /*row for the cotent within the next event*/
   .row{
+  /*new row */
     @include row;
+	/*position of coneten*/
     .textarea_content{
       width:83.33%;
+	  /*styling for content*/
       .p_light{
         @include light_text;
 
@@ -433,20 +545,18 @@ body{
 }
 
 }
-
+/*Styling for footer*/
 .footer{
   background-color: black;
   color: $dark-text-color;
   font-size: 18px;
   text-align: center;
   width: 100%;
+  /*create new row to include to coloumn one for slack and one for twitter*/
   @include row;
   float: left;
-  .LinkedIn{
-      width: 50%;
-      float: left;
-    }
-  .twitter{
+  /*styling for both links to other pages*/
+  .social{
       width: 50%;
       float: left;
   }

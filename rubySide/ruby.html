@@ -1,10 +1,13 @@
 <html>
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8">	
+	<!-- View point to make the website responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link to font awesome to be able to pull in icons -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<!-- Link to stylesheet-->
   <link rel="stylesheet" type="text/css" href="style.css">
+  <!--Link to javascript -->
   <script src="javascript.js"></script>
 </head>
 <body>
@@ -12,17 +15,20 @@
 	<div class="row" id="about">
 	<!-- first column  -->
 		<div class="  imagearea">
-
+			<!-- Div class for ruby side image row -->	
 			<div class="ruby_side ">
 				<!-- Ruby logo-->
-				<img class="col-12 col-m-4 align logo" id="logo" src="logo.png" alt="Girl in a jacket">
+				<img class="col-12 col-m-4 align logo" id="logo" src="logo.png" alt="Rubyside Logo">
 			</div>
+			<!-- Links under the RubySide Logo -->			
 			<div class="row">
+				<!-- Link to Next event section within the website -->	
 				<a href="#nextEvent"><h2 class=" col-m-6" >Next event</h2></a>
+				<!-- Link to Organisers section within the website -->
 				<a href="#Organisers"><h2 class=" col-m-6" >Organisers</h2></a>
 			</div>
 
-	<!-- Ruby SVG -->
+	<!-- Ruby SVG hidden for mobile -->	
 			<svg class="ruby" style="height:100%">
 				<polygon points="0 100, 90 100, 50 15 " style="fill:#FB191D;stroke:#FB191D;stroke-width:1" />
 				<polygon points="90 100 , 50 15, 140 15 " style="fill:#CC0001;stroke:#CC0001;stroke-width:1" />
@@ -33,13 +39,17 @@
 				<polygon points="90 100 , 180 100, 140 210 " style="fill:#CE0000;stroke:#CE0000;strokewidth:1" />
 				<polygon points="180 100 , 270 100, 140 210 " style="fill:#7C0000;stroke:#7C0000;strokewidth:1" />
 			</svg>
+			<!-- end of first column -->
 	</div>
-<!-- first column  -->
+<!-- second column  -->
 		<div class="textarea">
+		<!-- Row to include the header of section -->
 			<div class="textarea_head" >
 				<h1>About</h1>
 			</div>
+			<!-- Row to include the text for the section -->
 			<div class="row">
+				<!-- About content -->
 				<div class="textarea_content">
 					<p>Over the past 10 years, the way content is delivered on the web has changed drastically. In the next 10 years, it will change even more. We're not just pushing content to web pages but phones, TVs and more. On Wednesday 22nd February, we invite you to join a discussion on how you think content will be delivered and structured in the future to help shape and build a new open source project for the future on content on Rails.</p>
 				</div>
@@ -48,20 +58,29 @@
 	</div>
 <!-- second row  -->
  	<div class="row">
-	 <!-- second column  -->
-		<div class="  image_next" id="Organisers">
+	 <!-- first column in row  -->
+		<div class="image_next" id="Organisers">
+			<!-- row which showsd the organisers name -->
 			<div class="title">
 				<h3>Rubyside is hosted by</h3>
 			</div>
 			<div class="row">
+				<!-- Row to show the cleversteam_logo for both mobile and desktop-->
+				<!-- Desktop logo-->
 				<img class=" cleversteam_logo desktop" id="logo" src="cleversteam.png" alt="Girl in a jacket">
+				<!-- Mobile Logo-->
 				<img class=" cleversteam_logo media" id="logo" src="logo_whitex.png" alt="Girl in a jacket">
+				<!-- Third row to include links to the website-->
 				<div class="row">
+					<!-- link to about -->
 					<a href="#about"><h2 class=" col-m-6" >About</h2></a>
+					<!-- link to next event -->
 					<a href="#nextEvent"><h2 class=" col-m-6" >Next event</h2></a>
 				</div>
 			</div>
+			<!--Second ruby within the website which is hidden when the user is on the mobile -->
 	 		<div class="ruby_2">
+			<!-- Actual ruby created within a svg-->
 		 		<svg style="height:40%" >
 			 		<polygon points="0 100, 90 100, 50 15 " style="fill:#FB191D;stroke:#FB191D;stroke-width:1" />
 			 		<polygon points="90 100 , 50 15, 140 15 " style="fill:#CC0001;stroke:#CC0001;stroke-width:1" />
@@ -73,75 +92,118 @@
 			 		<polygon points="180 100 , 270 100, 140 210 " style="fill:#7C0000;stroke:#7C0000;strokewidth:1" />
 		 		</svg>
 			</div>
+			<!-- Coloumn end up stil in second row -->
 		</div>
-	 <!-- second column  -->
+	 <!-- second column in second row -->
 	 	<div class="textarea_2">
+			<!-- text area 2o to show the organisers -->
 	 		<div class="Organisers_layout">
+			<!-- row to add title of organsier -->
 		 		<div class="textarea_head" >
+					<!--heading styling  -->
 					<h1 >Organisers</h1>
 				</div>
+				<!-- Second row with the first organisers -->
 				<div class="daniel">
+				<!-- image of organisers-->
 					<img class="heads" id="logo" src="daniel.jpg" alt="Girl in a jacket">
+					<!-- Name of organisers-->
 					<p>Daniel Nicolson</p>
+					<!-- link to linkedin account -->
 					<a href="http://www.linkedin.com/profile/view?id=76405301"><p class="align p_dark">Director, Cleversteam </p></a>
 				</div>
+				<!-- third row with the last two organisers -->
 				<div class="row">
+				<!-- first organisers in this row -->
 					<div class="mike">
+						<!-- image of organisers -->
 						<img class="heads" id="logo" src="mike-headshot.jpg" alt="Girl in a jacket">
+						<!-- heading of organisers-->
 						<p class="align p_dark">Mike Hart</p>
+						<!-- link to linkedin account-->
 						<a href="https://www.linkedin.com/profile/view?id=303394379"><p class="align p_dark">Technical Director, Cleversteam </p></a>
 					</div>
+					<!-- second organiser in row -->
 					<div class="tom">
+					<!-- image of organiser -->
 						<img class="heads " id="logo" src="tom.jpg" alt="Girl in a jacket">
+						<!-- heading of organiser -->
 						<p>Tom Dracz</p>
+						<!-- Link to linkedin of organiser -->
 						<a href="https://www.linkedin.com/profile/view?id=303394379"><p class="align p_dark">Developer, Cleversteam </p></a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- Final row  -->
 	<div class="row">
+	<!-- First coloumn -->
 		<div class="imagearea">
+			<!-- row for next event -->
 			<div class="row" id="nextEvent">
+				<!-- title of next event-->
 				<div class="Organisers_image">
+					<!-- heading for next event with h2 tag-->
 					<h2 class="col-12  p_dark">Next Event</h2>
 				</div>
+				<!-- font awsome bring in the icon of a calendar -->
 				<div class="calendar fa fa-5x fa-calendar" >
-					
 				</div>
+				<!-- row to add in navigation -->
 				<div class="row">
+					<!-- navigation to about page  -->
 					<a href="#about"><h2 class=" col-m-6" >About</h2></a>
+					<!-- navigation to organiser -->
 					<a href="#Organisers"><h2 class=" col-m-6" >Organisers</h2></a>
 				</div>
 			</div>
 		</div>
+		<!-- second coloumn -->
 		<div class="  textarea">
+		<!-- area to include next event information -->
 			<div class="event_content" id="event_content" >
+			<!-- row for the headin for next event -->
 				<div class="textarea_head" >
+					<!-- title next event with tag h1 -->
 					<h1>Next Event</h1>
 				</div>
+				<!-- row to show time and date -->
 				<div class="time">
+				<!-- coloumn on to the left to show date-->
 					<div class="date">
+						<!-- text showing the date --> 
 						<p class="p_light">Date : 17th April 2018 | 6 - 8pm </p>
 					</div>
+					<!-- location coloumn  -->
 					<div class="location">
+						<!-- heading for location --> 
 						<p class="p_light">Location: Liverpool</p>
 					</div>
 				</div>
+				<!-- new row to show the content for the next event -->
 				<div class="row">
+				
 					<div class="textarea_content">
+						<!-- event content can be placed here -->
 						<p class="p_light">Over the past 10 years, the way content is delivered on the web has changed drastically. In the next 10 years, it will change even more. We're not just pushing content to web pages but phones, TVs and more. On Wednesday 22nd February, we invite you to join a discussion on how you think content will be delivered and structured in the future to help shape and build a new open source project for the future on content on Rails.</p>
 					</div>
 				</div>
+				<!-- row for button to take to eventbrite  -->
 				<div class="textarea_head" >
+					<!-- link for eventbrite  -->
 					<a href=""><h1>Book Now</h1></a>
 				</div>
 			</div>
 		</div>
+		<!-- end for coloumns and rows before footer -->
 	</div>
+	<!-- Start of footer -->
 	<footer class="footer">
-		<h2 class="LinkedIn fa fa-2x fa-slack" onclick="fadeout('Organisers', 'about')"> </h2>
-		<h2 class="twitter fa fa-2x fa-twitter" onclick="fadeout('Organisers', 'navigation')">@Rubyside </h2>
+		<!-- coloumn one for lack with font-awesome pulling in slack logo -->
+		<h2 class="social fa fa-2x fa-slack" onclick="fadeout('Organisers', 'about')"> </h2>
+		<!-- coloumn two for twitter with font-awesome pulling in twitter logo -->
+		<h2 class="social fa fa-2x fa-twitter" onclick="fadeout('Organisers', 'navigation')"></h2>
 	</footer>
 </body>
 </html>

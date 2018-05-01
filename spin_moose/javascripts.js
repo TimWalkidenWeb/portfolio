@@ -53,7 +53,7 @@ function prize (){
   if(prize_number == 50){
     top_number = top_number - 1;
     prizeDisplay ();
-    prize.innerHTML= 'you have won a all exspense trip';
+    prize.innerHTML= 'You have won a all exspense trip';
 	  }
     /*The second statment works out if they have won the second top prize by checking if the prize number
     between 45 and 49. As well make sure free flight tally is greater then 2, to make sure it is only won twice
@@ -62,7 +62,7 @@ function prize (){
     else if((prize_number >= 45) && (prize_number <= 49) && (free_flight_tally > 0)){
       free_flight_tally = free_flight_tally - 1;
         prizeDisplay ();
-      prize.innerHTML = 'you have free flights';
+      prize.innerHTML = 'You have free flights';
     }
     /*The third statment check to see if the user has won one of the money prize,
     by checking to see if the prize_number between 31 and 44. If it is a random
@@ -73,7 +73,7 @@ function prize (){
     else if((prize_number >= 31) && (prize_number <= 44)){
       money_prize = money_prize_items[Math.floor(Math.random()*money_prize_items.length)];
       prizeDisplay ();
-      prize.innerHTML = 'you have won ' +'\xA3' + money_prize;
+      prize.innerHTML = 'You have won ' +'\xA3' + money_prize;
     }
 
 
