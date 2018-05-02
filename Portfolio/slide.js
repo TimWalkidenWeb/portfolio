@@ -1,28 +1,20 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+function skill(evt, skillName) {
+    // Declare all variables
+    var i, skillcontent, tablinks;
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    // Get all elements with class="tabcontent" and hide them
+    skillcontent = document.getElementsByClassName("skillcontent");
+    for (i = 0; i < skillcontent.length; i++) {
+        skillcontent[i].style.display = "none";
+    }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    // Get all elements with class="tablinks" and remove the class "active"
+    skill_Links = document.getElementsByClassName("skill_Links");
+    for (i = 0; i < skill_Links.length; i++) {
+        skill_Links[i].className = skill_Links[i].className.replace(" active", "");
+    }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(skillName).style.display = "block";
+    evt.currentTarget.className += " active";
 }

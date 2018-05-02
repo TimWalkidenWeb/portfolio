@@ -2,8 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Playfair Display', sans-serif;
-  background: green; }
+  font-family: 'Playfair Display', sans-serif; }
   html #container, body #container {
     min-height: 100%;
     position: relative; }
@@ -56,6 +55,46 @@ html, body {
       margin-right: 15%;
       padding-bottom: 150px;
       /* Height of the footer */ }
+      html #container #body .skills .skills_title, body #container #body .skills .skills_title {
+        font-size: 3em;
+        text-align: center;
+        color: grey;
+        border-bottom-color: grey;
+        border-bottom-width: thin;
+        border-bottom-style: solid;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 1%; }
+      html #container #body .skills .tab, body #container #body .skills .tab {
+        overflow: hidden;
+        width: 60%;
+        margin-right: 20%;
+        margin-left: 20%; }
+        html #container #body .skills .tab .skill_Links, body #container #body .skills .tab .skill_Links {
+          background-color: inherit;
+          float: left;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          width: 33%;
+          transition: 0.3s;
+          font-size: 20px;
+          text-align: center;
+          color: grey;
+          padding-top: 1%;
+          text-decoration: none;
+          text-decoration-line: none;
+          padding-bottom: 5%;
+          text-decoration-line: underline;
+          text-decoration: underline;
+          font-weight: bolder; }
+      html #container #body .skills .skillcontent, body #container #body .skills .skillcontent {
+        display: none;
+        text-align: center;
+        width: 60%;
+        margin-left: 20%; }
+        html #container #body .skills .skillcontent .skill, body #container #body .skills .skillcontent .skill {
+          width: 100%; }
       html #container #body .my_approach, body #container #body .my_approach {
         width: 100%; }
         html #container #body .my_approach .my_approach_title, body #container #body .my_approach .my_approach_title {

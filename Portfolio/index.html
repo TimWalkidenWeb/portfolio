@@ -2,8 +2,8 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" type="text/css" href="style.css">
+<script src="slide.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style2.css/style.css">
 
 </head>
 
@@ -27,8 +27,33 @@
 	<div class="banner">
 		<h1 class="banner_text"> Timothy Walkiden</h1>
 		<h2 class="banner_sub">Graduate Web Developer</h2>
+		<a href="Timothy_Walkiden_cv.pdf" target="_blank">Read more</a>
+		
 	</div>
    <div id="body">
+
+		 <div class="skills">
+			 <h1 class="skills_title">My Skills </h1>
+
+			 <div class="tab">
+  		 	<button class="skill_Links" id="skill_shown_onload" onclick="skill(event, 'Frontend')">Front-end</button>
+  			<button class="skill_Links" onclick="skill(event, 'Backend')">Back-end</button>
+  			<button class="skill_Links" onclick="skill(event, 'Testing')">Testing &amp; other skills</button>
+				</div>
+
+<!-- Tab content -->
+			<div id="Frontend" class="skillcontent">
+  			<img class="skill" id="logo" src="front_pic.png" alt="Logo">
+			</div>
+
+			<div id="Backend" class="skillcontent">
+  			<img class="skill" id="logo" src="back.png" alt="Logo">
+			</div>
+
+		<div id="Testing" class="skillcontent">
+  		<img class="skill" id="logo" src="test.png" alt="Logo">
+		</div>
+		</div>
 
 		 <div class="my_approach">
  			<h1 class="my_approach_title">My Approach</h1>
@@ -61,5 +86,9 @@
 
 </div>
 </body>
+<script>
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("skill_shown_onload").click();
+</script>
 
 </html>
