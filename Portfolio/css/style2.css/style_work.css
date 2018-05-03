@@ -1,0 +1,480 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Playfair Display', sans-serif; }
+  html #container, body #container {
+    min-height: 100%;
+    position: relative; }
+    html #container #header nav, body #container #header nav {
+      content: "";
+      clear: both;
+      display: block;
+      background-color: black;
+      width: 100%;
+      height: 10%;
+      padding-bottom: 2%; }
+      html #container #header nav .Logo_Nav, body #container #header nav .Logo_Nav {
+        width: 20%;
+        float: left;
+        padding: 1%; }
+        html #container #header nav .Logo_Nav .logo, body #container #header nav .Logo_Nav .logo {
+          height: 100%; }
+      html #container #header nav .Nav_Links, body #container #header nav .Nav_Links {
+        text-align: center;
+        width: 75%;
+        float: right;
+        height: 100%; }
+        html #container #header nav .Nav_Links .link, body #container #header nav .Nav_Links .link {
+          width: 33.33%;
+          color: white;
+          float: right;
+          font-size: 2em; }
+          @media only screen and (max-width: 767px) {
+            html #container #header nav .Nav_Links .link, body #container #header nav .Nav_Links .link {
+              font-size: 1em; } }
+        html #container #header nav .Nav_Links .four_links, body #container #header nav .Nav_Links .four_links {
+          color: white;
+          float: right;
+          font-size: 2em;
+          width: 25%; }
+          @media only screen and (max-width: 767px) {
+            html #container #header nav .Nav_Links .four_links, body #container #header nav .Nav_Links .four_links {
+              font-size: 1em; } }
+    @media only screen and (max-width: 767px) {
+      html #container #body, body #container #body {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%; } }
+    @media only screen and (min-width: 767px) {
+      html #container #body, body #container #body {
+        width: 70%;
+        padding-left: 15%;
+        padding-right: 15%; } }
+    html #container #body .problem, body #container #body .problem {
+      width: 100%; }
+      html #container #body .problem .problem_title, body #container #body .problem .problem_title {
+        font-size: 2em;
+        text-align: center;
+        color: grey;
+        border-bottom-color: grey;
+        border-bottom-width: thin;
+        border-bottom-style: solid;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 1%; }
+      html #container #body .problem .problem_text, body #container #body .problem .problem_text {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 18px;
+        margin-left: 7%;
+        margin-right: 7%; }
+    html #container #body .research, body #container #body .research {
+      width: 100%;
+      padding-bottom: 1%; }
+      html #container #body .research .research_title, body #container #body .research .research_title {
+        font-size: 2em;
+        text-align: center;
+        color: grey;
+        border-bottom-color: grey;
+        border-bottom-width: thin;
+        border-bottom-style: solid;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 1%; }
+      html #container #body .research .research_content, body #container #body .research .research_content {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 1em;
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 18px;
+      }
+    html #container #body .design .design_title, body #container #body .design .design_title {
+      font-size: 2em;
+      text-align: center;
+      color: grey;
+      border-bottom-color: grey;
+      border-bottom-width: thin;
+      border-bottom-style: solid;
+      margin-left: 5%;
+      margin-right: 5%;
+      padding: 1%; }
+    html #container #body .design_content, body #container #body .design_content {
+      width: 100%;
+      margin-bottom: 5%;
+      margin-top: 5%; }
+      @media only screen and (min-width: 768px) {
+        html #container #body .design_content, body #container #body .design_content {
+          clear: both;
+          display: block;
+          height: 25%; }
+          html #container #body .design_content .image_content, body #container #body .design_content .image_content {
+            width: 50%;
+            padding-left: 5%;
+            padding-right: 5%;
+            text-align: center;
+            float: left; }
+            html #container #body .design_content .image_content .image_container, body #container #body .design_content .image_content .image_container {
+              width: 100%; }
+              html #container #body .design_content .image_content .image_container .image, body #container #body .design_content .image_content .image_container .image {
+                height: 100%;
+                box-shadow: 0px 1px 5px 0px black; }
+              html #container #body .design_content .image_content .image_container .portrait, body #container #body .design_content .image_content .image_container .portrait {
+                height: 100%;
+                box-shadow: 0px 1px 5px 0px black; }
+            html #container #body .design_content .image_content .image_container_about, body #container #body .design_content .image_content .image_container_about {
+              width: 100%; }
+              html #container #body .design_content .image_content .image_container_about .image, body #container #body .design_content .image_content .image_container_about .image {
+                height: 100%;
+                box-shadow: 0px 1px 5px 0px black; }
+          html #container #body .design_content .text_content, body #container #body .design_content .text_content {
+            width: 35%;
+            float: left;
+            padding-right: 5%;
+            font-size: 18px;
+             } }
+      @media only screen and (max-width: 767px) {
+        html #container #body .design_content .image_content, body #container #body .design_content .image_content {
+          width: 90%;
+          padding-left: 5%;
+          padding-right: 5%;
+          text-align: center; }
+          html #container #body .design_content .image_content .image_container, body #container #body .design_content .image_content .image_container {
+            margin-bottom: 3%; }
+            html #container #body .design_content .image_content .image_container .image, body #container #body .design_content .image_content .image_container .image {
+              width: 100%;
+              box-shadow: 0px 1px 5px 0px black; }
+            html #container #body .design_content .image_content .image_container .portrait, body #container #body .design_content .image_content .image_container .portrait {
+              width: 50%;
+              height: 50%;
+              box-shadow: 0px 1px 5px 0px black; }
+          html #container #body .design_content .image_content .image_container_about, body #container #body .design_content .image_content .image_container_about {
+            margin-bottom: 3%; }
+            html #container #body .design_content .image_content .image_container_about .image, body #container #body .design_content .image_content .image_container_about .image {
+              height: 50%;
+              box-shadow: 0px 1px 5px 0px black; }
+        html #container #body .design_content .text_content, body #container #body .design_content .text_content {
+          width: 90%;
+          padding-left: 5%;
+          padding-right: 5%; } }
+    html #container #body .develop, body #container #body .develop {
+      width: 100%; }
+      html #container #body .develop .develop_title, body #container #body .develop .develop_title {
+        font-size: 1.5em;
+        text-align: center;
+        color: grey;
+        border-bottom-color: grey;
+        border-bottom-width: thin;
+        border-bottom-style: solid;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 1%; }
+    html #container #body .develop_content, body #container #body .develop_content {
+      margin-bottom: 5%;
+      margin-top: 5%; }
+      @media only screen and (min-width: 768px) {
+        html #container #body .develop_content, body #container #body .develop_content {
+          clear: both;
+          display: block;
+          height: 25%; }
+          html #container #body .develop_content .image_content, body #container #body .develop_content .image_content {
+            width: 50%;
+            padding-left: 5%;
+            padding-right: 5%;
+            text-align: center;
+            float: left; }
+            html #container #body .develop_content .image_content .image_container, body #container #body .develop_content .image_content .image_container {
+              width: 100%; }
+              html #container #body .develop_content .image_content .image_container .image, body #container #body .develop_content .image_content .image_container .image {
+                height: 100%;
+                box-shadow: 0px 1px 5px 0px black; }
+              html #container #body .develop_content .image_content .image_container .portrait, body #container #body .develop_content .image_content .image_container .portrait {
+                height: 100%;
+                box-shadow: 0px 1px 5px 0px black; }
+            html #container #body .develop_content .image_content .image_container_about, body #container #body .develop_content .image_content .image_container_about {
+              width: 100%; }
+              html #container #body .develop_content .image_content .image_container_about .image, body #container #body .develop_content .image_content .image_container_about .image {
+                height: 100%;
+                box-shadow: 0px 1px 5px 0px black; }
+          html #container #body .develop_content .text_content, body #container #body .develop_content .text_content {
+            width: 35%;
+            float: left;
+            padding-right: 5%;
+            font-size: 18px;
+
+            } }
+      @media only screen and (max-width: 767px) {
+        html #container #body .develop_content .image_content, body #container #body .develop_content .image_content {
+          width: 90%;
+          padding-left: 5%;
+          padding-right: 5%;
+          text-align: center;
+
+        }
+          html #container #body .develop_content .image_content .image_container, body #container #body .develop_content .image_content .image_container {
+            margin-bottom: 3%; }
+            html #container #body .develop_content .image_content .image_container .image, body #container #body .develop_content .image_content .image_container .image {
+              width: 100%;
+              box-shadow: 0px 1px 5px 0px black; }
+            html #container #body .develop_content .image_content .image_container .portrait, body #container #body .develop_content .image_content .image_container .portrait {
+              width: 50%;
+              height: 50%;
+              box-shadow: 0px 1px 5px 0px black; }
+          html #container #body .develop_content .image_content .image_container_about, body #container #body .develop_content .image_content .image_container_about {
+            margin-bottom: 3%; }
+            html #container #body .develop_content .image_content .image_container_about .image, body #container #body .develop_content .image_content .image_container_about .image {
+              height: 50%;
+              box-shadow: 0px 1px 5px 0px black; }
+        html #container #body .develop_content .text_content, body #container #body .develop_content .text_content {
+          width: 90%;
+          padding-left: 5%;
+          padding-right: 5%; } }
+    html #container #body .test, body #container #body .test {
+      width: 100%;
+      padding-bottom: 1%; }
+      html #container #body .test .test_title, body #container #body .test .test_title {
+        font-size: 1.5em;
+        text-align: center;
+        color: grey;
+        border-bottom-color: grey;
+        border-bottom-width: thin;
+        border-bottom-style: solid;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 1%; }
+      html #container #body .test .test_text, body #container #body .test .test_text {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 18px;
+        margin-left: 7%;
+        margin-right: 7%;
+      }
+    html #container #body .about, body #container #body .about {
+      width: 100%; }
+      html #container #body .about .about_title, body #container #body .about .about_title {
+        font-size: 2em;
+        text-align: center;
+        color: grey;
+        border-bottom-color: grey;
+        border-bottom-width: thin;
+        border-bottom-style: solid;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 1%; }
+    html #container #body .about_content, body #container #body .about_content {
+      height: 50%;
+      margin-bottom: 5%;
+      margin-top: 5%; }
+      @media only screen and (min-width: 768px) {
+        html #container #body .about_content, body #container #body .about_content {
+          clear: both;
+          display: block;
+          height: 25%; }
+          html #container #body .about_content .image_content, body #container #body .about_content .image_content {
+            width: 50%;
+            padding-left: 5%;
+            padding-right: 5%;
+            text-align: center;
+            float: left; }
+            html #container #body .about_content .image_content .image_container, body #container #body .about_content .image_content .image_container {
+              width: 100%; }
+              html #container #body .about_content .image_content .image_container .image, body #container #body .about_content .image_content .image_container .image {
+                height: 100%;
+                box-shadow: 0px 1px 5px 0px black; }
+              html #container #body .about_content .image_content .image_container .portrait, body #container #body .about_content .image_content .image_container .portrait {
+                height: 100%;
+                box-shadow: 0px 1px 5px 0px black; }
+            html #container #body .about_content .image_content .image_container_about, body #container #body .about_content .image_content .image_container_about {
+              width: 100%; }
+              html #container #body .about_content .image_content .image_container_about .image, body #container #body .about_content .image_content .image_container_about .image {
+                height: 100%;
+                box-shadow: 0px 1px 5px 0px black; }
+          html #container #body .about_content .text_content, body #container #body .about_content .text_content {
+            width: 35%;
+            float: left;
+            padding-right: 5%;
+            font-size: 18px;
+             } }
+      @media only screen and (max-width: 767px) {
+        html #container #body .about_content .image_content, body #container #body .about_content .image_content {
+          width: 90%;
+          padding-left: 5%;
+          padding-right: 5%;
+          text-align: center; }
+          html #container #body .about_content .image_content .image_container, body #container #body .about_content .image_content .image_container {
+            margin-bottom: 3%; }
+            html #container #body .about_content .image_content .image_container .image, body #container #body .about_content .image_content .image_container .image {
+              width: 100%;
+              box-shadow: 0px 1px 5px 0px black; }
+            html #container #body .about_content .image_content .image_container .portrait, body #container #body .about_content .image_content .image_container .portrait {
+              width: 50%;
+              height: 50%;
+              box-shadow: 0px 1px 5px 0px black; }
+          html #container #body .about_content .image_content .image_container_about, body #container #body .about_content .image_content .image_container_about {
+            margin-bottom: 3%; }
+            html #container #body .about_content .image_content .image_container_about .image, body #container #body .about_content .image_content .image_container_about .image {
+              height: 50%;
+              box-shadow: 0px 1px 5px 0px black; }
+        html #container #body .about_content .text_content, body #container #body .about_content .text_content {
+          width: 90%;
+          padding-left: 5%;
+          padding-right: 5%;
+
+           } }
+    html #container #body .personal, body #container #body .personal {
+      width: 100%; }
+      html #container #body .personal .personal_title, body #container #body .personal .personal_title {
+        font-size: 2em;
+        text-align: center;
+        color: grey;
+        border-bottom-color: grey;
+        border-bottom-width: thin;
+        border-bottom-style: solid;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 1%; }
+    html #container #body .personal_content, body #container #body .personal_content {
+      margin-bottom: 5%;
+      margin-top: 5%;
+
+     }
+      @media only screen and (min-width: 768px) {
+        html #container #body .personal_content, body #container #body .personal_content {
+          clear: both;
+          display: block;
+          height: 25%;
+          font-size: 18px;
+        }
+          html #container #body .personal_content .image_content, body #container #body .personal_content .image_content {
+            width: 50%;
+            padding-left: 5%;
+            padding-right: 5%;
+            text-align: center;
+            float: left; }
+            html #container #body .personal_content .image_content .image_container, body #container #body .personal_content .image_content .image_container {
+              width: 100%; }
+              html #container #body .personal_content .image_content .image_container .image, body #container #body .personal_content .image_content .image_container .image {
+                height: 100%;
+                box-shadow: 0px 1px 5px 0px black; }
+              html #container #body .personal_content .image_content .image_container .portrait, body #container #body .personal_content .image_content .image_container .portrait {
+                height: 100%;
+                box-shadow: 0px 1px 5px 0px black; }
+            html #container #body .personal_content .image_content .image_container_about, body #container #body .personal_content .image_content .image_container_about {
+              width: 100%; }
+              html #container #body .personal_content .image_content .image_container_about .image, body #container #body .personal_content .image_content .image_container_about .image {
+                height: 100%;
+                box-shadow: 0px 1px 5px 0px black; }
+          html #container #body .personal_content .text_content, body #container #body .personal_content .text_content {
+            width: 35%;
+            float: left;
+            padding-right: 5%; } }
+      @media only screen and (max-width: 767px) {
+        html #container #body .personal_content .image_content, body #container #body .personal_content .image_content {
+          width: 90%;
+          padding-left: 5%;
+          padding-right: 5%;
+          text-align: center; }
+          html #container #body .personal_content .image_content .image_container, body #container #body .personal_content .image_content .image_container {
+            margin-bottom: 3%; }
+            html #container #body .personal_content .image_content .image_container .image, body #container #body .personal_content .image_content .image_container .image {
+              width: 100%;
+              box-shadow: 0px 1px 5px 0px black; }
+            html #container #body .personal_content .image_content .image_container .portrait, body #container #body .personal_content .image_content .image_container .portrait {
+              width: 50%;
+              height: 50%;
+              box-shadow: 0px 1px 5px 0px black; }
+          html #container #body .personal_content .image_content .image_container_about, body #container #body .personal_content .image_content .image_container_about {
+            margin-bottom: 3%; }
+            html #container #body .personal_content .image_content .image_container_about .image, body #container #body .personal_content .image_content .image_container_about .image {
+              height: 50%;
+              box-shadow: 0px 1px 5px 0px black; }
+        html #container #body .personal_content .text_content, body #container #body .personal_content .text_content {
+          width: 90%;
+          padding-left: 5%;
+          padding-right: 5%; } }
+      @media only screen and (min-width: 768px) {
+        html #container #body .personal_content .text, body #container #body .personal_content .text {
+          font-size: 1rem; } }
+      @media only screen and (min-width: 768px) {
+        html #container #body .personal_content .text, body #container #body .personal_content .text {
+          font-size: 1rem; } }
+    html #container #body .previous_work, body #container #body .previous_work {
+      width: 100%; }
+      html #container #body .previous_work .previous_work_title, body #container #body .previous_work .previous_work_title {
+        font-size: 1.5em;
+        text-align: center;
+        color: grey;
+        border-bottom-color: grey;
+        border-bottom-width: thin;
+        border-bottom-style: solid;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 1%; }
+    html #container #body .previous_work_content, body #container #body .previous_work_content {
+      margin-bottom: 5%;
+      margin-top: 5%;
+      margin-bottom: 1%; }
+      @media only screen and (min-width: 768px) {
+        html #container #body .previous_work_content, body #container #body .previous_work_content {
+          clear: both;
+          display: block;
+          height: 25%; }
+          html #container #body .previous_work_content .image_content, body #container #body .previous_work_content .image_content {
+            width: 50%;
+            padding-left: 5%;
+            padding-right: 5%;
+            text-align: center;
+            float: left; }
+            html #container #body .previous_work_content .image_content .image_container, body #container #body .previous_work_content .image_content .image_container {
+              width: 100%; }
+              html #container #body .previous_work_content .image_content .image_container .image, body #container #body .previous_work_content .image_content .image_container .image {
+                height: 100%;
+                box-shadow: 0px 1px 5px 0px black; }
+              html #container #body .previous_work_content .image_content .image_container .portrait, body #container #body .previous_work_content .image_content .image_container .portrait {
+                height: 100%;
+                box-shadow: 0px 1px 5px 0px black; }
+            html #container #body .previous_work_content .image_content .image_container_about, body #container #body .previous_work_content .image_content .image_container_about {
+              width: 100%; }
+              html #container #body .previous_work_content .image_content .image_container_about .image, body #container #body .previous_work_content .image_content .image_container_about .image {
+                height: 100%;
+                box-shadow: 0px 1px 5px 0px black; }
+          html #container #body .previous_work_content .text_content, body #container #body .previous_work_content .text_content {
+            width: 35%;
+            float: left;
+            padding-right: 5%;
+            font-size: 18px;
+             } }
+      @media only screen and (max-width: 767px) {
+        html #container #body .previous_work_content .image_content, body #container #body .previous_work_content .image_content {
+          width: 90%;
+          padding-left: 5%;
+          padding-right: 5%;
+          text-align: center; }
+          html #container #body .previous_work_content .image_content .image_container, body #container #body .previous_work_content .image_content .image_container {
+            margin-bottom: 3%; }
+            html #container #body .previous_work_content .image_content .image_container .image, body #container #body .previous_work_content .image_content .image_container .image {
+              width: 100%;
+              box-shadow: 0px 1px 5px 0px black; }
+            html #container #body .previous_work_content .image_content .image_container .portrait, body #container #body .previous_work_content .image_content .image_container .portrait {
+              width: 50%;
+              height: 50%;
+              box-shadow: 0px 1px 5px 0px black; }
+          html #container #body .previous_work_content .image_content .image_container_about, body #container #body .previous_work_content .image_content .image_container_about {
+            margin-bottom: 3%; }
+            html #container #body .previous_work_content .image_content .image_container_about .image, body #container #body .previous_work_content .image_content .image_container_about .image {
+              height: 50%;
+              box-shadow: 0px 1px 5px 0px black; }
+        html #container #body .previous_work_content .text_content, body #container #body .previous_work_content .text_content {
+          width: 90%;
+          padding-left: 5%;
+          padding-right: 5%; } }
+    html #container #body .links, body #container #body .links {
+      text-align: center;
+      width: 100%; }
+      html #container #body .links .social, body #container #body .links .social {
+        width: 33%;
+        float: left; }
+        html #container #body .links .social a:link, html #container #body .links .social a:visited, html #container #body .links .social a:hover, html #container #body .links .social a:hover, body #container #body .links .social a:link, body #container #body .links .social a:visited, body #container #body .links .social a:hover, body #container #body .links .social a:hover {
+          text-decoration: none;
+          color: black; }

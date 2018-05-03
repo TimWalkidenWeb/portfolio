@@ -53,21 +53,49 @@ html,body {
     width: 100%;
     background-color: black;
     margin: 0%;
-    height: 350px;
+    height: 450px;
     text-align: center;
-    .banner_text{
-      color: red;
-      margin: 0;
-      padding-top: calc(175px - 110px);
-      font-size: 7vw;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: #FFF;
-    }
-    .banner_sub{
-      color: white;
-      font-size: 3vw;
-    }
-  }
+ @media only screen and (max-width: 767px) {
+   .banner_text{
+     color: red;
+     margin: 0;
+     padding-top: calc(175px - 110px);
+     font-size: 40px;;
+     -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: #FFF;
+   }
+   .banner_sub{
+     color: white;
+     font-size: 20px;
+   }
+
+     .download{
+       color: white;
+       font-size: 15px;
+       text-decoration: none;
+     }
+   }
+
+   @media only screen and (min-width: 767px) {
+     .banner_text{
+       color: red;
+       margin: 0;
+       padding-top: calc(175px - 110px);
+       font-size: 7vw;
+       -webkit-text-stroke-width: 1px;
+       -webkit-text-stroke-color: #FFF;
+     }
+     .banner_sub{
+       color: white;
+       font-size: 3vw;
+     }
+     .download{
+       color: white;
+       font-size: 1vw;
+     }
+   }
+}
+
 
 #body {
   width: 70%;
@@ -200,7 +228,7 @@ html,body {
        width: 25%;
        margin-left: 5%;
        /* margin-right: 5%; */
-       height: 30%;
+       height: 15%;
        text-align: center;
        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
        padding-bottom: 3%;
@@ -209,7 +237,7 @@ html,body {
 
        .project_image{
          padding-top: 5%;
-         height: 75%;
+        //  height: 50%;
          width: 75%;
        }
        .project_title{

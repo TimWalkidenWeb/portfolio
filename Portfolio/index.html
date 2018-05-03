@@ -1,82 +1,117 @@
 <html>
 <head>
-	<meta charset="UTF-8">
+		<meta charset="UTF-8">
+		<!-- meta tage to make website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="slide.js"></script>
+		<!-- Javascript for skills  -->
+		<script src="slide.js"></script>
+		<!-- Style sheet -->
   <link rel="stylesheet" type="text/css" href="css/style2.css/style.css">
 
 </head>
 
 
 <body>
+	<!-- First contain to include nav bar and banner -->
 <div id="container">
+	<!-- header includes nav bar  -->
    <div id="header">
+		 <!-- Start of nav bar  -->
 		 <nav>
+			 <!-- logo container -->
 	     <div class="Logo_Nav">
+				 <!-- Logo input  -->
 	       <img class="logo" id="logo" src="logo.png" alt="Logo">
 	     </div>
+			 <!-- Container for links floating to the right -->
 	 		<div class="Nav_Links">
+				<!-- links to other pages  -->
 				<a href="contact.html"><p class="link">Contact</p></a>
 				<a href="index.html#projects"><p class="link">Projects</p></a>
 	 			<a href="about.html"><p class="link">About</p></a>
-
-
 	 		</div>
 	 		</nav>
+			<!--End of the header  -->
 	 </div>
+	 <!-- Start of the banner located under the nav bar  -->
 	<div class="banner">
+		<!-- banner heading with the largest text  -->
 		<h1 class="banner_text"> Timothy Walkiden</h1>
+		<!--sub heading with job title with second larges text  -->
 		<h2 class="banner_sub">Graduate Web Developer</h2>
-		<a href="Timothy_Walkiden_cv.pdf" target="_blank">Read more</a>
-		
-	</div>
+		<!--sub sub  heading with button to download cv  -->
+		<a class="download" href="cv.pdf" download>
+			<!--title to show to allow the user to download cv -->
+  			<h2>Download CV</h2>
+		</a>
+		</div>
+		<!-- Main Body  -->
    <div id="body">
-
+		 <!-- First row in the body for skills  -->
 		 <div class="skills">
+			 <!-- Title of row  -->
 			 <h1 class="skills_title">My Skills </h1>
-
+			 <!-- Links to change the images in the section  -->
 			 <div class="tab">
+				 <!-- links to change images with on click linking the function in javascript   -->
   		 	<button class="skill_Links" id="skill_shown_onload" onclick="skill(event, 'Frontend')">Front-end</button>
   			<button class="skill_Links" onclick="skill(event, 'Backend')">Back-end</button>
   			<button class="skill_Links" onclick="skill(event, 'Testing')">Testing &amp; other skills</button>
 				</div>
 
-<!-- Tab content -->
+				<!-- Image inside of the skills section   -->
+				<!-- Front end view picture with id used in javacript  -->
 			<div id="Frontend" class="skillcontent">
+				<!-- loading in front end image  -->
   			<img class="skill" id="logo" src="front_pic.png" alt="Logo">
 			</div>
-
+			<!-- Back end view picture with id used in javacript  -->
 			<div id="Backend" class="skillcontent">
+				<!-- loading in back end image  -->
   			<img class="skill" id="logo" src="back.png" alt="Logo">
 			</div>
-
+			<!-- Test view picture with id used in javacript  -->
 		<div id="Testing" class="skillcontent">
+			<!-- loading in test image  -->
   		<img class="skill" id="logo" src="test.png" alt="Logo">
 		</div>
 		</div>
-
+		<!-- Second row used for approach -->
 		 <div class="my_approach">
+			 <!-- Row title  -->
  			<h1 class="my_approach_title">My Approach</h1>
+			<!-- row image for approach-->
  			<img class="my_approach_image" id="logo" src="my_approach.png" alt="Logo">
  		</div>
-
+		<!-- Third row for projects spliting in to three columns -->
  		<div class="my_project" id="projects">
+			<!-- heading for row placed above the three columns  -->
  			<h1 class="my_project_title">My Projects</h1>
+			<!-- First column for spin the moose with a link used over the whole section -->
 			<a href="portfolio_spin.html">
+				<!-- container for the heading and image  -->
  			<div class="project">
+				<!-- image for the project  -->
  				<img class="project_image" id="logo" src="final_design.png" alt="Logo">
+				<!-- heading for project  -->
  				<h2 class="project_title">Spin the moose</h2>
  			</div>
-		</a>
+			</a>
+				<!-- second column for rubyside with a link used over the whole section -->
 		<a href="portfolio_rubyside.html">
+			<!-- container for the heading and image  -->
  			<div class="project">
  				<img class="project_image" id="logo" src="rubyside_development.PNG" alt="Logo">
  				<h2 class="project_title">Rubyside</h2>
  			</div>
 		</a>
+			<!-- Third column for project with a link used over the whole section -->
 		<a href="portfolio.html">
+			<!-- container for the heading and image  -->
  			<div class="project">
+					<!-- image for the project  -->
  				<img class="project_image" id="logo" src="pro-devlopment.png" alt="Logo">
+				<!-- heading for project  -->
  				<h2 class="project_title">Portfolio website</h2>
  			</div>
 		</a>
@@ -87,7 +122,7 @@
 </div>
 </body>
 <script>
-// Get the element with id="defaultOpen" and click on it
+// Adds a default image to skills section
 document.getElementById("skill_shown_onload").click();
 </script>
 

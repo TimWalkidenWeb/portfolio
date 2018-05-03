@@ -37,18 +37,37 @@ html, body {
       width: 100%;
       background-color: black;
       margin: 0%;
-      height: 350px;
+      height: 450px;
       text-align: center; }
-      html #container .banner .banner_text, body #container .banner .banner_text {
-        color: red;
-        margin: 0;
-        padding-top: calc(175px - 110px);
-        font-size: 7vw;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #FFF; }
-      html #container .banner .banner_sub, body #container .banner .banner_sub {
-        color: white;
-        font-size: 3vw; }
+      @media only screen and (max-width: 767px) {
+        html #container .banner .banner_text, body #container .banner .banner_text {
+          color: red;
+          margin: 0;
+          padding-top: calc(175px - 110px);
+          font-size: 40px;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: #FFF; }
+        html #container .banner .banner_sub, body #container .banner .banner_sub {
+          color: white;
+          font-size: 20px; }
+        html #container .banner .download, body #container .banner .download {
+          color: white;
+          font-size: 15px;
+          text-decoration: none; } }
+      @media only screen and (min-width: 767px) {
+        html #container .banner .banner_text, body #container .banner .banner_text {
+          color: red;
+          margin: 0;
+          padding-top: calc(175px - 110px);
+          font-size: 7vw;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: #FFF; }
+        html #container .banner .banner_sub, body #container .banner .banner_sub {
+          color: white;
+          font-size: 3vw; }
+        html #container .banner .download, body #container .banner .download {
+          color: white;
+          font-size: 1vw; } }
     html #container #body, body #container #body {
       width: 70%;
       margin-left: 15%;
@@ -150,7 +169,7 @@ html, body {
             width: 25%;
             margin-left: 5%;
             /* margin-right: 5%; */
-            height: 30%;
+            height: 15%;
             text-align: center;
             box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
             padding-bottom: 3%;
@@ -158,7 +177,6 @@ html, body {
             float: left; }
             html #container #body .my_project .project .project_image, body #container #body .my_project .project .project_image {
               padding-top: 5%;
-              height: 75%;
               width: 75%; }
             html #container #body .my_project .project .project_title, body #container #body .my_project .project .project_title {
               font-size: 20px;
