@@ -11,13 +11,12 @@ $text-color-two: rgb(42,58,79);
   font-size: 18px;
   border-color: $text-color;
   weight: 700;
+
 }
 
 body{
   margin: 0%;
-  @media only screen and (max-width: 767px) {
-    background-color: red;
-  }
+
 }
 
 .game_container{
@@ -65,7 +64,10 @@ body{
       color: white;
       text-align: right;
       margin-right: 1%;
-      margin-bottom: 0%
+      margin-bottom: 0%;
+      @media only screen and (max-width: 767px) {
+        display: none;
+      }
 
     }
 
@@ -105,7 +107,7 @@ body{
 @media only screen and (max-width: 767px) {
    .game{
     left: 10px;
-    top: 200px;
+    top: 115px;
     position: absolute;
     width: 20%;
   .wheel{
@@ -128,6 +130,17 @@ body{
 }
 
   }
+  .spin_button{
+    text-align: center;
+    background-color: #2cffbd;
+    border-color: #2cffbd;
+    font-size: 14px;
+    border-color: #2cffbd;
+    weight: 700;
+    margin-top: 151px;
+    margin-left: 11px;
+  }
+
 }
   .text{
     text-align: center;
@@ -157,6 +170,16 @@ body{
     .contactForm{
       float: left;
       padding: 5% /* adds pading around all sides of the text*/;
+      @media only screen and (max-width: 767px) {
+        float: left;
+        /* padding: 5%; */
+        width: 100%;
+        background: black;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-top: 5%;
+      }
+
 
       .formTitle{
         text-align: center; /*place text in the center*/

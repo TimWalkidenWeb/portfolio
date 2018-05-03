@@ -1,8 +1,5 @@
 body {
   margin: 0%; }
-  @media only screen and (max-width: 767px) {
-    body {
-      background-color: red; } }
 
 .game_container {
   padding-bottom: 2%;
@@ -42,6 +39,9 @@ body {
     text-align: right;
     margin-right: 1%;
     margin-bottom: 0%; }
+    @media only screen and (max-width: 767px) {
+      .game_container h4 {
+        display: none; } }
   @media only screen and (min-width: 768px) {
     .game_container .game {
       left: 10px;
@@ -52,11 +52,13 @@ body {
         /* Place the game including the moose in relative position within the game*/
         width: 100%;
         /* Creates the width of the wheel as 50%*/ }
-	 .game_container .game .prize {
-		 text-align: center; /*place text in the center*/
-		color: white; /*changes font colour */
-        font-size:20px; /*sets font size*/
-		}		 
+      .game_container .game .prize {
+        text-align: center;
+        /*place text in the center*/
+        color: white;
+        /*changes font colour */
+        font-size: 20px;
+        /*sets font size*/ }
       .game_container .game #myAnimation {
         left: 42%;
         /*Moves the moose to 44% to the left, causing it to be centered*/
@@ -78,7 +80,7 @@ body {
   @media only screen and (max-width: 767px) {
     .game_container .game {
       left: 10px;
-      top: 200px;
+      top: 115px;
       position: absolute;
       width: 20%; }
       .game_container .game .wheel {
@@ -86,11 +88,13 @@ body {
         /* Place the game including the moose in relative position within the game*/
         width: 100%;
         /* Creates the width of the wheel as 50%*/ }
-		.game_container .game .prize {
-		 text-align: center; /*place text in the center*/
-		color: white; /*changes font colour */
-        font-size:20px; /*sets font size*/
-		}	
+      .game_container .game .prize {
+        text-align: center;
+        /*place text in the center*/
+        color: white;
+        /*changes font colour */
+        font-size: 14px;
+        /*sets font size*/ }
       .game_container .game #myAnimation {
         left: 42%;
         /*Moves the moose to 44% to the left, causing it to be centered*/
@@ -102,7 +106,16 @@ body {
         /* sets to width of the div, not the image */ }
         .game_container .game #myAnimation .moose {
           width: 100%;
-          /*This sets the image to 100% of the div it is contained in*/ } }
+          /*This sets the image to 100% of the div it is contained in*/ }
+    .game_container .spin_button {
+      text-align: center;
+      background-color: #2cffbd;
+      border-color: #2cffbd;
+      font-size: 14px;
+      border-color: #2cffbd;
+      weight: 700;
+      margin-top: 151px;
+      margin-left: 11px; } }
   .game_container .text {
     text-align: center;
     width: 100%;
@@ -129,6 +142,15 @@ body {
     .game_container .ContactInfo .contactForm {
       float: left;
       padding: 5%; }
+      @media only screen and (max-width: 767px) {
+        .game_container .ContactInfo .contactForm {
+          float: left;
+          /* padding: 5%; */
+          width: 100%;
+          background: black;
+          padding-top: 5%;
+          padding-bottom: 5%;
+          margin-top: 5%; } }
       .game_container .ContactInfo .contactForm .formTitle {
         text-align: center;
         /*place text in the center*/

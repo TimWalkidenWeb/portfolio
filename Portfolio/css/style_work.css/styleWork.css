@@ -394,12 +394,8 @@ html, body {
           width: 90%;
           padding-left: 5%;
           padding-right: 5%; } }
-      @media only screen and (min-width: 768px) {
-        html #container #body .personal_content .text, body #container #body .personal_content .text {
-          font-size: 1rem; } }
-      @media only screen and (min-width: 768px) {
-        html #container #body .personal_content .text, body #container #body .personal_content .text {
-          font-size: 1rem; } }
+      html #container #body .personal_content .text, body #container #body .personal_content .text {
+        font-size: 1rem; }
     html #container #body .previous_work, body #container #body .previous_work {
       width: 100%; }
       html #container #body .previous_work .previous_work_title, body #container #body .previous_work .previous_work_title {
