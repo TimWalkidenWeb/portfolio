@@ -123,7 +123,8 @@ html, body {
                 height: 100%;
                 box-shadow: 0px 1px 5px 0px black; }
               html #container #body .design_content .image_content .image_container #big, body #container #body .design_content .image_content .image_container #big {
-                height: 100%; }
+                height: 100%;
+                box-shadow: 0px 1px 5px 0px black; }
             html #container #body .design_content .image_content .image_container_about, body #container #body .design_content .image_content .image_container_about {
               width: 100%; }
               html #container #body .design_content .image_content .image_container_about .image, body #container #body .design_content .image_content .image_container_about .image {
@@ -195,7 +196,8 @@ html, body {
                 height: 100%;
                 box-shadow: 0px 1px 5px 0px black; }
               html #container #body .develop_content .image_content .image_container #big, body #container #body .develop_content .image_content .image_container #big {
-                height: 100%; }
+                height: 100%;
+                box-shadow: 0px 1px 5px 0px black; }
             html #container #body .develop_content .image_content .image_container_about, body #container #body .develop_content .image_content .image_container_about {
               width: 100%; }
               html #container #body .develop_content .image_content .image_container_about .image, body #container #body .develop_content .image_content .image_container_about .image {
@@ -245,7 +247,7 @@ html, body {
         padding: 1%; }
       html #container #body .test .test_text, body #container #body .test .test_text {
         margin-top: 5%;
-        margin-bottom: 5%;
+        padding-bottom: 15%;
         font-size: 1em;
         margin-left: 7%;
         margin-right: 7%; }
@@ -285,7 +287,8 @@ html, body {
                 height: 100%;
                 box-shadow: 0px 1px 5px 0px black; }
               html #container #body .about_content .image_content .image_container #big, body #container #body .about_content .image_content .image_container #big {
-                height: 100%; }
+                height: 100%;
+                box-shadow: 0px 1px 5px 0px black; }
             html #container #body .about_content .image_content .image_container_about, body #container #body .about_content .image_content .image_container_about {
               width: 100%; }
               html #container #body .about_content .image_content .image_container_about .image, body #container #body .about_content .image_content .image_container_about .image {
@@ -355,7 +358,8 @@ html, body {
                 height: 100%;
                 box-shadow: 0px 1px 5px 0px black; }
               html #container #body .personal_content .image_content .image_container #big, body #container #body .personal_content .image_content .image_container #big {
-                height: 100%; }
+                height: 100%;
+                box-shadow: 0px 1px 5px 0px black; }
             html #container #body .personal_content .image_content .image_container_about, body #container #body .personal_content .image_content .image_container_about {
               width: 100%; }
               html #container #body .personal_content .image_content .image_container_about .image, body #container #body .personal_content .image_content .image_container_about .image {
@@ -432,7 +436,8 @@ html, body {
                 height: 100%;
                 box-shadow: 0px 1px 5px 0px black; }
               html #container #body .previous_work_content .image_content .image_container #big, body #container #body .previous_work_content .image_content .image_container #big {
-                height: 100%; }
+                height: 100%;
+                box-shadow: 0px 1px 5px 0px black; }
             html #container #body .previous_work_content .image_content .image_container_about, body #container #body .previous_work_content .image_content .image_container_about {
               width: 100%; }
               html #container #body .previous_work_content .image_content .image_container_about .image, body #container #body .previous_work_content .image_content .image_container_about .image {

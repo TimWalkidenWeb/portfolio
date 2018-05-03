@@ -1,50 +1,63 @@
+// Styling for links
 @mixin link {
+  // media query to change text size for link when switchs to desktop
   @media only screen and (max-width: 767px) {
     font-size: 1em;
   }
+  // other styling for links and font size for mobile
   color: white;
   float: right;
   font-size: 2em;
 }
-
+// text content for each of the rows with two columns
 @mixin text_content {
+  // padding to add a gap between sections
   margin-bottom: 5%;
   margin-top: 5%;
 
+  // design for desktop
   @media only screen and (min-width: 768px) {
+    // row styling
     clear: both;
     display: block;
     height: 25%;
+    // styling for image column
     .image_content{
       width: 50%;
       padding-left: 5%;
       padding-right: 5%;
       text-align: center;
       float: left;
+      // styling for image container
       .image_container{
         width: 100%;
-
+        // styling for first type of image
         .image{
           width: 90%;
           box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
           }
+          // styling for image which are portrait
         .portrait{
           height: 100%;
           box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
         }
+        // styling for image which are two large for row
         #big{
-          width: 100%;
-            box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
+          height: 100%;
+          box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
         }
         }
+        // image contain for image in about section
       .image_container_about{
        width: 100%;
+      //  image styling
        .image{
          height: 100%;
          box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
        }
       }
     }
+    // Second column for content
     .text_content{
       width: 35%;
       float:left;
@@ -53,27 +66,34 @@
        padding-right: 5%;
     }
   }
+  // styling for rows and column on mobile
   @media only screen and (max-width: 767px) {
+    // styling for image column on mobible
     .image_content{
       width: 90%;
       padding-left: 5%;
       padding-right: 5%;
       text-align: center;
+      // mobile image container
       .image_container{
       margin-bottom: 3%;
+      // styling for image
       .image{
         width: 100%;
 
         box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
     }
+    // styling for portrait image
     .portrait{
       width: 50%;
       height: 50%;
       box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
     }
     }
+    // mobile styling for about images
     .image_container_about{
       margin-bottom: 3%;
+      // image styling
      .image{
        height: 50%;
        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
@@ -82,6 +102,7 @@
 
 
   }
+  // second column for text content
     .text_content{
       width: 90%;
       padding-left: 5%;
@@ -91,12 +112,10 @@
 
 
 }
-
+// global style for titles
 @mixin title {
   text-align: center;
-  // text-decoration: underline;
   color: grey;
-  // text-decoration-color: grey;
   border-bottom-color: grey;
   border-bottom-width: thin;
   border-bottom-style: solid;
@@ -105,17 +124,19 @@
   padding: 1%;
 }
 
+// style for body and html with setting of font for whole website
 html,body {
    margin:0;
    padding:0;
    height:100%;
   font-family: 'Playfair Display', sans-serif;
-
+// main body container styling
 #container {
    min-height:100%;
    position:relative;
-
+// styling for header including navigation and logo
 #header {
+  // nav bar styling
   nav{
      content: "";
      clear: both;
@@ -124,25 +145,29 @@ html,body {
      width: 100%;
      height: 10%;
      padding-bottom: 2%;
+    //  styling for logo container
      .Logo_Nav{
        width: 20%;
        float: left;
        padding: 1%;
+      //  logo styling
        .logo{
          height: 100%;
        }
      }
-
+    //  styling for nav links
      .Nav_Links{
        text-align: center;
        width: 75%;
        float: right;
        height: 100%;
+      //  styling for pages with three links in heading
        .link{
           width: 33.33%;
           @include link;
 
        }
+      //  styling for 4 nav links in heading
        .four_links{
          @include link;
          width: 25%;
@@ -152,25 +177,33 @@ html,body {
    }
 
 }
+// styling for main body of text
 #body {
+  // setting margin depending on the device
+  // mobile
   @media only screen and (max-width: 767px) {
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
   }
+  // desk top
   @media only screen and (min-width: 767px) {
     width: 70%;
     padding-left: 15%;
     padding-right: 15%;
   }
 
+  // styling for problem
   .problem{
     width: 100%;
+    // row for problem title
     .problem_title{
       font-size: 2em;
+      // call in title style
       @include title;
 
     }
+    // styling for problem text with its own row
     .problem_text{
       margin-top: 5%;
       margin-bottom: 5%;
@@ -181,13 +214,17 @@ html,body {
 
 
 }
+// new row for research title
 .research{
   width: 100%;
   padding-bottom: 1%;
+  // research title styling
   .research_title{
     font-size: 1.5em;
+      // call in title style
     @include title;
   }
+  // new row and research content styling
   .research_content{
     margin-top: 5%;
     margin-bottom: 5%;
@@ -197,18 +234,22 @@ html,body {
     font-size: 18px;
   }
 }
+// new row  of design title
 .design{
-
-
+  // design title styling
   .design_title{
     font-size: 1.5em;
+    // call in title style
+
     @include title;
   }
 
 }
+// new row for design content
 .design_content{
 
   width: 100%;
+  // call in styling for content which includes two coloumns for image and text
     @include text-content;
 }
 .develop{
@@ -217,6 +258,8 @@ html,body {
 
   .develop_title{
     font-size: 1.5em;
+    // call in title style
+
     @include title;
   }
 
@@ -225,85 +268,98 @@ html,body {
     margin-top: 10%;
   }
 .develop_content{
+    // call in styling for content which includes two coloumns for image and text
     @include text-content;
 
 }
+// styling for test content
 .test{
 
   width: 100%;
   padding-bottom: 1%;
+  // styling for test
   .test_title{
     font-size: 1.5em;
+    // call in title style
+
     @include title;
   }
+  // styling for test contents
   .test_text{
     margin-top: 5%;
-    margin-bottom: 5%;
+    padding-bottom: 15%;
     font-size: 1em;
     margin-left: 7%;
     margin-right: 7%
   }
 }
-
+// styling for about section
 .about{
   width: 100%;
-
+// styling for about title
   .about_title{
     font-size: 2em;
+    // call in title style
+
     @include title;
   }
 
 }
+// styling for about content
 .about_content{
   height: 50%;
     @include text-content;
 
 }
-
+// styling for personal section
 .personal{
   width: 100%;
+  // styling for personal contents
   .personal_title{
     font-size: 1.5em;
+    // call in title style
+
     @include title;
   }
 
 }
+// styling for personal content
 .personal_content{
     @include text-content;
-  @media only screen and (min-width: 768px) {
+    // styling for text in personal content
     .text {
       font-size: 1rem;
     }
-  }
-  @media only screen and (min-width: 768px) {
-    .text{
-      font-size: 1rem;
-    }
-  }
+
+
 
 
 }
-
+// styling for previous work
 .previous_work{
   width: 100%;
   .previous_work_title{
     font-size: 1.5em;
+      // call in title style
     @include title;
   }
 
 }
 .previous_work_content{
+    // styling for text in personal content
     @include text-content;
     margin-bottom: 1%;
 
 }
+// styling for social media links
   .links{
     text-align: center;
     width: 100%;
-
+    // media links styling
     .social{
       width: 33%;
       float: left;
+      // make sure not syling changes with interactions
       a:link, a:visited, a:hover, a:hover {
         text-decoration: none;
         color: black;
